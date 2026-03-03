@@ -186,7 +186,43 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(
   #progress-bar{left:0;}
   .opts{grid-template-columns:1fr;}
   .match-grid{grid-template-columns:1fr 1fr;}
+  .exam-opts{grid-template-columns:1fr;}
 }
+
+/* ─── EXAM BLOCK ─────────────────────────────────── */
+.exam-block{margin-top:40px;border-top:2px solid var(--border);padding-top:28px;}
+.exam-intro,.exam-result{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:28px;text-align:center;}
+.exam-title{font-size:20px;font-weight:800;color:var(--accent);margin-bottom:10px;}
+.exam-desc{font-size:14px;color:var(--muted);margin-bottom:16px;line-height:1.6;}
+.exam-meta{display:flex;justify-content:center;gap:14px;margin-bottom:22px;flex-wrap:wrap;}
+.exam-meta span{font-size:13px;font-weight:600;background:var(--surface2);padding:6px 14px;border-radius:20px;color:var(--text);}
+.exam-start-btn{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border:none;padding:13px 32px;border-radius:10px;font-size:15px;font-weight:700;cursor:pointer;transition:transform .15s;}
+.exam-start-btn:hover{transform:scale(1.03);}
+.exam-session{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:22px;}
+.exam-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+.exam-progress-text{font-size:13px;color:var(--muted);font-weight:600;}
+.exam-score-live{font-size:14px;font-weight:700;color:var(--accent);}
+.exam-prog-bar{height:5px;background:var(--surface2);border-radius:4px;margin-bottom:22px;overflow:hidden;}
+.exam-prog-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));transition:width .3s;}
+.exam-q{font-size:17px;font-weight:700;margin-bottom:18px;line-height:1.5;}
+.exam-opts{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:16px;}
+.exam-opt{background:var(--surface2);border:2px solid var(--border);border-radius:10px;padding:13px 14px;font-size:13px;font-weight:600;color:var(--text);cursor:pointer;text-align:left;line-height:1.4;transition:all .15s;}
+.exam-opt:hover:not(:disabled){border-color:var(--accent);background:rgba(79,142,247,.07);}
+.exam-opt.exam-correct{background:#22c55e15;border-color:var(--green);color:var(--green);}
+.exam-opt.exam-wrong{background:#ef444415;border-color:var(--red);color:var(--red);}
+.exam-opt:disabled{cursor:default;}
+.exam-feedback{padding:10px 14px;border-radius:8px;font-size:13px;font-weight:600;margin-bottom:12px;min-height:38px;}
+.exam-fb-good{background:#22c55e15;color:var(--green);border:1px solid #22c55e30;}
+.exam-fb-bad{background:#ef444415;color:var(--red);border:1px solid #ef444430;}
+.exam-next-btn{width:100%;padding:12px;border-radius:10px;font-size:14px;font-weight:700;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border:none;cursor:pointer;margin-top:4px;}
+.exam-result-emoji{font-size:48px;margin-bottom:12px;}
+.exam-result-score{font-size:26px;font-weight:800;margin-bottom:8px;}
+.exam-result-sub{font-size:14px;margin-bottom:20px;color:var(--muted);}
+.exam-review-title{font-size:13px;font-weight:700;color:var(--text);margin:16px 0 10px;text-align:left;}
+.exam-review-item{background:var(--surface2);border:1px solid var(--border);border-radius:8px;padding:12px 14px;margin-bottom:8px;text-align:left;font-size:12.5px;line-height:1.6;}
+.exam-review-wrong{color:var(--red);}
+.exam-review-correct{color:var(--green);}
+.exam-result-review{max-height:350px;overflow-y:auto;margin-bottom:20px;}
 </style>
 </head>
 <body>
@@ -5128,6 +5164,38 @@ Pro mě je nejdůležitější... <em>(For me, the most important thing is...)</
 </div>
 </div>
 <script>showTab('pane-lesson','flashcard');</script>
+
+<div class="exam-block" id="exam-grammar" data-exam='[{"q": "Which sentence uses Accusative (akuzativ) correctly?", "a": "Mám bratra.", "opts": ["Mám bratr.", "Mám bratra.", "Vidím bratr.", "Je tady bratr."]}, {"q": "Complete: 'Dám si ___ (káva)' — femininum in accusative", "a": "kávu", "opts": ["káva", "kávu", "kávy", "kávě"]}, {"q": "Which verb ALWAYS requires an Accusative object?", "a": "vidět (to see)", "opts": ["být (to be)", "pracovat (to work)", "vidět (to see)", "bydlet (to live)"]}, {"q": "In 'To je škola' — 'škola' is in which case?", "a": "Nominative (subjekt)", "opts": ["Accusative (objekt)", "Nominative (subjekt)", "Dative", "Genitive"]}, {"q": "'Guláš' in accusative (masc. inanimate) — what changes?", "a": "Nothing — masc. inanimate = no change", "opts": ["guláše", "gulášu", "Nothing — masc. inanimate = no change", "gulášem"]}, {"q": "Complete: 'Dám si ___ (rýže)' — femininum in accusative", "a": "rýži", "opts": ["rýže", "rýži", "rýží", "rýžím"]}, {"q": "'Mám rád ___ čaj.' — 'černý čaj' is masculine inanimate. What form?", "a": "černý čaj (no change — masc. inanimate)", "opts": ["černého čaje", "černý čaj (no change — masc. inanimate)", "černém čaji", "černému čaji"]}, {"q": "Complete: 'Vidím ___ (sestra)' — femininum accusative", "a": "sestru", "opts": ["sestra", "sestru", "sestry", "sestře"]}, {"q": "What case does 'Jsem + profese' use? (e.g. Jsem účetní)", "a": "Nominative — no change after jsem", "opts": ["Accusative", "Nominative — no change after jsem", "Dative", "Genitive"]}, {"q": "Which verbs take accusative? (výběr více)", "a": "mít, vidět, dát si, jíst, pít, hledat, číst", "opts": ["být, pracovat, bydlet", "mít, vidět, dát si, jíst, pít, hledat, číst", "jít, jet, telefonovat", "bydlet, studovat, mluvit"]}, {"q": "Which day requires 've' (not 'v') before it?", "a": "ve středu", "opts": ["v pondělí", "ve středu", "v pátek", "v sobotu"]}, {"q": "Which other day also uses 've'?", "a": "ve čtvrtek", "opts": ["v úterý", "v sobotu", "ve čtvrtek", "v neděli"]}, {"q": "How do you say 'on the weekend' in Czech?", "a": "o víkendu", "opts": ["v víkend", "o víkendu", "ve víkend", "na víkend"]}, {"q": "Why does 've středu' use 've' instead of 'v'?", "a": "'st-' = two consonants together → use 've'", "opts": ["Random rule", "'st-' = two consonants together → use 've'", "středa is feminine", "Always 've' on Wednesdays"]}, {"q": "What is 'at 2 o'clock' in Czech?", "a": "ve dvě hodiny", "opts": ["v dvě hodiny", "ve dvě hodiny", "v dva hodiny", "ve dva hodiny"]}, {"q": "What is 'at twelve o'clock' in Czech?", "a": "ve dvanáct hodin", "opts": ["v dvanáct hodin", "ve dvanáct hodin", "v dvanácti", "ve dvanáct"]}, {"q": "What does 'dopoledne' mean?", "a": "before noon / late morning", "opts": ["in the morning (very early)", "before noon / late morning", "in the afternoon", "at night"]}, {"q": "How do you say 'at noon' in Czech?", "a": "v poledne", "opts": ["v poledne", "v noci", "odpoledne", "dopoledne"]}, {"q": "How do you say 'on the 1st of March'?", "a": "prvního března", "opts": ["první března", "prvního března", "prvnímu března", "prvního marce"]}, {"q": "How do you say 'on the 8th of July'?", "a": "osmého července", "opts": ["osm července", "osmého července", "osmému červenci", "osmý červenec"]}, {"q": "'Kolikátého je dnes?' means:", "a": "What is today's date?", "opts": ["What time is it?", "What is today's date?", "What day is today?", "How long is today?"]}, {"q": "How do you say 'from 2nd to 10th of March'?", "a": "od druhého do desátého března", "opts": ["z druhý do desátý března", "od druhého do desátého března", "z dva do deset března", "od druhý do desátý"]}, {"q": "What is the 'já' form of 'pracovat'?", "a": "já pracuju", "opts": ["já pracuji (only)", "já pracuju", "já pracuje", "já pracovat"]}, {"q": "Complete: 'Ona ___ (jíst) polévku.'", "a": "jí", "opts": ["jíme", "jí", "jíte", "jím"]}, {"q": "What is the 'já' form of 'číst'?", "a": "čtu", "opts": ["čístu", "čtu", "čtem", "číst"]}, {"q": "Complete: 'Ty ___ (pít) kávu.'", "a": "piješ", "opts": ["piju", "pijete", "piješ", "pije"]}, {"q": "What is the 'já' form of 'rozumět'?", "a": "rozumím", "opts": ["rozumím", "rozuměju", "rozumí", "rozumíš"]}, {"q": "Complete: 'My ___ (dělat) domácí úkol.'", "a": "děláme", "opts": ["dělám", "děláte", "děláme", "dělají"]}, {"q": "What is the 'on/ona' form of 'studovat'?", "a": "studuje", "opts": ["studuju", "studuje", "studuješ", "studujete"]}, {"q": "'Dívat se' means what in English?", "a": "to watch / look at", "opts": ["to listen", "to watch / look at", "to read", "to concentrate"]}, {"q": "What is 'my' for masculine nouns? (můj bratr)", "a": "můj", "opts": ["moje", "můj", "mé", "mí"]}, {"q": "What is 'my' for feminine nouns? (moje sestra)", "a": "moje / má", "opts": ["můj", "moje / má", "moji", "mých"]}, {"q": "How do you say 'your' (informal, masculine, tvůj bratr)?", "a": "tvůj", "opts": ["váš", "tvůj", "tvoje", "jejich"]}, {"q": "What does 'ujde to' mean?", "a": "it's okay / manageable (so-so)", "opts": ["it's great", "it's okay / manageable (so-so)", "it's bad", "I don't know"]}, {"q": "What is 'ženatý' in English?", "a": "married (man)", "opts": ["married (woman)", "engaged (man)", "married (man)", "divorced (man)"]}, {"q": "What does 'souhlasím' mean?", "a": "I agree", "opts": ["I disagree", "I understand", "I agree", "I know"]}, {"q": "Which exam level is required for Czech citizenship?", "a": "B1", "opts": ["A1", "A2", "B1", "B2"]}, {"q": "What is the Czech for 'unfortunately'?", "a": "bohužel", "opts": ["samozřejmě", "bohužel", "přesně", "opravdu"]}, {"q": "'Jsem nastydlý/á' means:", "a": "I have a cold", "opts": ["I am tired", "I have a cold", "I am confused", "I have a fever"]}, {"q": "What does 'volný den' mean?", "a": "day off", "opts": ["working day", "day off", "free time", "holiday (vacation)"]}, {"q": "Complete: 'Jsou doma' vs 'Jdu domů' — what is the difference?", "a": "doma = static location; domů = direction/movement", "opts": ["No difference", "doma = static location; domů = direction/movement", "doma = formal; domů = informal", "domů = plural form"]}]' data-pass='60'>
+  <div class="exam-intro" id="exam-grammar-intro">
+    <div class="exam-title">📝 Grammar MCQ Exam</div>
+    <div class="exam-desc">Test yourself on verb conjugations, nominative vs accusative, days &amp; the v/ve rule, ordinal dates, and vocabulary from your lessons with Petra. 20 questions — need 60% to pass.</div>
+    <div class="exam-meta">
+      <span>❓ 20 questions</span>
+      <span>✅ Pass: 60%</span>
+      <span>📋 Multiple choice</span>
+      <span>🔄 Unlimited attempts</span>
+    </div>
+    <button class="exam-start-btn" onclick="startExam('exam-grammar')">Start Exam ▶</button>
+  </div>
+  <div class="exam-session" id="exam-grammar-session" style="display:none">
+    <div class="exam-header">
+      <div class="exam-progress-text" id="exam-grammar-prog-text">Q 1 / 20</div>
+      <div class="exam-score-live" id="exam-grammar-score-live">Score: 0</div>
+    </div>
+    <div class="exam-prog-bar"><div class="exam-prog-fill" id="exam-grammar-prog-fill" style="width:0%"></div></div>
+    <div class="exam-q" id="exam-grammar-q"></div>
+    <div class="exam-opts" id="exam-grammar-opts"></div>
+    <div class="exam-feedback" id="exam-grammar-fb"></div>
+    <button class="exam-next-btn" id="exam-grammar-next" style="display:none" onclick="nextExamQ('exam-grammar')">Next Question →</button>
+  </div>
+  <div class="exam-result" id="exam-grammar-result" style="display:none">
+    <div class="exam-result-emoji" id="exam-grammar-res-emoji"></div>
+    <div class="exam-result-score" id="exam-grammar-res-score"></div>
+    <div class="exam-result-sub" id="exam-grammar-res-sub"></div>
+    <div class="exam-result-review" id="exam-grammar-res-review"></div>
+    <button class="exam-start-btn" onclick="restartExam('exam-grammar')">↺ Try Again</button>
+  </div>
+</div>
 </div>
 <div class="page" id="page-5"><div class="content"><h1>Useful Phrases for the Speaking Exam &amp; Daily Life</h1>
 <blockquote>
@@ -8186,7 +8254,39 @@ Include: how long you've been here, what you like, what is difficult, why you wa
 <td>On one hand... on the other hand...</td>
 </tr>
 </tbody>
-</table></div></div>
+</table></div>
+<div class="exam-block" id="exam-citizenship" data-exam='[{"q": "What colours are on the Czech flag?", "a": "White, red, and blue", "opts": ["White, red, and blue", "Red, white, and green", "Blue, yellow, and red", "White, blue, and yellow"]}, {"q": "What is the Czech national anthem called?", "a": "Kde domov můj?", "opts": ["Kde domov můj?", "Čechy krásné, Čechy mé", "Vlajka nad Prahou", "Naše vlast"]}, {"q": "Who wrote the Czech national anthem?", "a": "Josef Kajetán Tyl (1834)", "opts": ["Josef Kajetán Tyl (1834)", "Bedřich Smetana", "Franz Kafka", "Václav Havel"]}, {"q": "Czech State Day (Den české státnosti) is on...", "a": "28. září (September 28)", "opts": ["28. října (October 28)", "28. září (September 28)", "17. listopadu (November 17)", "1. ledna (January 1)"]}, {"q": "The founding of Czechoslovakia is remembered on...", "a": "28. října 1918", "opts": ["28. října 1918", "17. listopadu 1989", "8. května 1945", "1. ledna 1993"]}, {"q": "How many chambers does Czech Parliament have?", "a": "Two (Poslanecká sněmovna + Senát)", "opts": ["One", "Two (Poslanecká sněmovna + Senát)", "Three", "Four"]}, {"q": "How many members are in the Chamber of Deputies?", "a": "200", "opts": ["81", "100", "200", "300"]}, {"q": "How many senators are in the Czech Senate?", "a": "81", "opts": ["61", "71", "81", "100"]}, {"q": "The Czech president is elected for how many years?", "a": "5 years (max 2 terms)", "opts": ["4 years", "5 years (max 2 terms)", "6 years", "7 years"]}, {"q": "Who is the current Czech president (since 2023)?", "a": "Petr Pavel", "opts": ["Miloš Zeman", "Václav Havel", "Václav Klaus", "Petr Pavel"]}, {"q": "Who was the first president of Czechoslovakia?", "a": "T.G. Masaryk (1918)", "opts": ["Václav Havel", "Edvard Beneš", "T.G. Masaryk (1918)", "Antonín Novotný"]}, {"q": "What is the Czech currency?", "a": "Koruna česká (Kč)", "opts": ["Euro (€)", "Koruna česká (Kč)", "Forint", "Zloty"]}, {"q": "What is the capital city of Czech Republic?", "a": "Praha (Prague)", "opts": ["Brno", "Ostrava", "Olomouc", "Praha (Prague)"]}, {"q": "How many regions (kraje) does Czech Republic have?", "a": "14", "opts": ["10", "12", "14", "16"]}, {"q": "When did Czech Republic become independent from Slovakia?", "a": "1. ledna 1993", "opts": ["17. listopadu 1989", "28. října 1990", "1. ledna 1993", "1. května 1994"]}, {"q": "What river flows through Prague?", "a": "Vltava", "opts": ["Labe", "Morava", "Vltava", "Ohře"]}, {"q": "The highest mountain in Czech Republic is...", "a": "Sněžka (1602 m)", "opts": ["Praděd", "Lysá hora", "Sněžka (1602 m)", "Říp"]}, {"q": "Czech ambulance emergency number?", "a": "155", "opts": ["112", "150", "155", "158"]}, {"q": "Czech police emergency number?", "a": "158", "opts": ["112", "150", "155", "158"]}, {"q": "Pan-European emergency number?", "a": "112", "opts": ["110", "111", "112", "999"]}, {"q": "Czech Republic joined the EU in...", "a": "2004", "opts": ["1999", "2001", "2004", "2007"]}, {"q": "Czech Republic joined NATO in...", "a": "1999", "opts": ["1993", "1999", "2004", "2007"]}, {"q": "The Velvet Revolution began on...", "a": "17. listopadu 1989", "opts": ["28. října 1989", "17. listopadu 1989", "1. ledna 1990", "28. října 1990"]}, {"q": "Jan Hus was burned at the stake in...", "a": "1415", "opts": ["1348", "1415", "1620", "1848"]}, {"q": "Patron saint of Bohemia and Moravia?", "a": "Sv. Václav (Saint Wenceslas)", "opts": ["Sv. Jan Nepomucký", "Sv. Prokop", "Sv. Václav (Saint Wenceslas)", "Sv. Cyril"]}, {"q": "The Velvet Divorce (split of Czechoslovakia) was in...", "a": "1993", "opts": ["1989", "1991", "1993", "1995"]}, {"q": "Victory Day (end of WWII) in Czech Republic is...", "a": "8. května", "opts": ["1. května", "8. května", "28. října", "17. listopadu"]}, {"q": "Labour Day in Czech Republic is...", "a": "1. května (May 1)", "opts": ["1. března", "8. května", "1. května (May 1)", "28. října"]}, {"q": "Who leads the Czech government (vláda)?", "a": "Prime Minister (Předseda vlády)", "opts": ["President", "Speaker of Parliament", "Prime Minister (Předseda vlády)", "Senate Chairman"]}, {"q": "How often are Chamber of Deputies elections held?", "a": "Every 4 years", "opts": ["Every 2 years", "Every 4 years", "Every 5 years", "Every 6 years"]}]' data-pass='60'>
+  <div class="exam-intro" id="exam-citizenship-intro">
+    <div class="exam-title">📝 Life &amp; Institutions Exam Simulator</div>
+    <div class="exam-desc">Simulates the real Czech citizenship knowledge exam: 20 questions on Czech history, politics, geography, and civic life. The real exam is 30 questions — you need 60% to pass.</div>
+    <div class="exam-meta">
+      <span>❓ 20 questions</span>
+      <span>✅ Pass: 60%</span>
+      <span>📋 Multiple choice</span>
+      <span>🔄 Unlimited attempts</span>
+    </div>
+    <button class="exam-start-btn" onclick="startExam('exam-citizenship')">Start Exam ▶</button>
+  </div>
+  <div class="exam-session" id="exam-citizenship-session" style="display:none">
+    <div class="exam-header">
+      <div class="exam-progress-text" id="exam-citizenship-prog-text">Q 1 / 20</div>
+      <div class="exam-score-live" id="exam-citizenship-score-live">Score: 0</div>
+    </div>
+    <div class="exam-prog-bar"><div class="exam-prog-fill" id="exam-citizenship-prog-fill" style="width:0%"></div></div>
+    <div class="exam-q" id="exam-citizenship-q"></div>
+    <div class="exam-opts" id="exam-citizenship-opts"></div>
+    <div class="exam-feedback" id="exam-citizenship-fb"></div>
+    <button class="exam-next-btn" id="exam-citizenship-next" style="display:none" onclick="nextExamQ('exam-citizenship')">Next Question →</button>
+  </div>
+  <div class="exam-result" id="exam-citizenship-result" style="display:none">
+    <div class="exam-result-emoji" id="exam-citizenship-res-emoji"></div>
+    <div class="exam-result-score" id="exam-citizenship-res-score"></div>
+    <div class="exam-result-sub" id="exam-citizenship-res-sub"></div>
+    <div class="exam-result-review" id="exam-citizenship-res-review"></div>
+    <button class="exam-start-btn" onclick="restartExam('exam-citizenship')">↺ Try Again</button>
+  </div>
+</div>
+</div>
 <div class="page" id="page-9"><div class="content"><h1>Study Roadmap: A1/A2 → B1 → Citizenship Exam</h1>
 <h2>Your Personal Learning Path</h2>
 <hr />
@@ -8817,6 +8917,56 @@ function czShowResult(pid){
   p.querySelector('.res-sub').textContent=pct>=60?'Pass rate! Earned '+st.sessionXP+' XP':'Keep studying — you need 60% to pass';
   STREAK++;localStorage.setItem('streak',STREAK);updateXPBar();
 }
+
+// ── EXAM SIMULATOR ──
+const examSt={};
+function startExam(pid){
+  const allQ=JSON.parse($i(pid).dataset.exam);
+  const passPct=+$i(pid).dataset.pass||60;
+  const st=examSt[pid]={allQ,passPct,q:shuffle(allQ).slice(0,Math.min(20,allQ.length)),idx:0,correct:0,wrong:[],sessionXP:0};
+  $i(pid+'-intro').style.display='none';
+  $i(pid+'-session').style.display='block';
+  $i(pid+'-result').style.display='none';
+  renderExamQ(pid);
+}
+function renderExamQ(pid){
+  const st=examSt[pid],card=st.q[st.idx],total=st.q.length;
+  $i(pid+'-prog-text').textContent='Q '+(st.idx+1)+' / '+total;
+  $i(pid+'-score-live').textContent='Score: '+st.correct;
+  $i(pid+'-prog-fill').style.width=((st.idx/total)*100)+'%';
+  $i(pid+'-q').textContent=card.q;
+  const og=$i(pid+'-opts');og.innerHTML='';
+  card.opts.forEach(o=>{const b=document.createElement('button');b.className='exam-opt';b.textContent=o;b.onclick=()=>checkExamQ(pid,o,b);og.appendChild(b);});
+  $i(pid+'-fb').textContent='';$i(pid+'-fb').className='exam-feedback';
+  $i(pid+'-next').style.display='none';
+}
+function checkExamQ(pid,chosen,btn){
+  const st=examSt[pid],card=st.q[st.idx];
+  $i(pid+'-opts').querySelectorAll('.exam-opt').forEach(b=>{b.disabled=true;if(b.textContent===card.a)b.classList.add('exam-correct');});
+  const fb=$i(pid+'-fb');
+  if(chosen===card.a){btn.classList.add('exam-correct');fb.textContent='✅ Correct!';fb.className='exam-feedback exam-fb-good';st.correct++;addXP(10,pid);st.sessionXP+=10;speak(card.cz||'');}
+  else{btn.classList.add('exam-wrong');fb.innerHTML='❌ Correct answer: <strong>'+card.a+'</strong>';fb.className='exam-feedback exam-fb-bad';st.wrong.push({q:card.q,a:card.a,given:chosen});}
+  $i(pid+'-score-live').textContent='Score: '+st.correct;
+  $i(pid+'-next').style.display='block';
+}
+function nextExamQ(pid){const st=examSt[pid];st.idx++;if(st.idx>=st.q.length){showExamResult(pid);return;}renderExamQ(pid);}
+function showExamResult(pid){
+  const st=examSt[pid];
+  const pct=Math.round((st.correct/st.q.length)*100);
+  const passed=pct>=st.passPct;
+  $i(pid+'-session').style.display='none';
+  $i(pid+'-result').style.display='block';
+  $i(pid+'-res-emoji').textContent=passed?'🏆':pct>=50?'📚':'💪';
+  $i(pid+'-res-score').textContent=st.correct+'/'+st.q.length+' — '+pct+'%';
+  $i(pid+'-res-sub').textContent=passed?'✅ PASSED! +'+st.sessionXP+' XP earned':'❌ Need '+st.passPct+'% to pass — keep practising!';
+  const rv=$i(pid+'-res-review');rv.innerHTML='';
+  if(st.wrong.length){
+    rv.innerHTML='<div class="exam-review-title">📋 Review your incorrect answers:</div>';
+    st.wrong.forEach(w=>{rv.innerHTML+='<div class="exam-review-item"><strong>Q: </strong>'+w.q+'<br><span class="exam-review-wrong">✗ Your answer: '+w.given+'</span><br><span class="exam-review-correct">✓ Correct: '+w.a+'</span></div>';});
+  }
+  STREAK++;localStorage.setItem('streak',STREAK);updateXPBar();
+}
+function restartExam(pid){$i(pid+'-result').style.display='none';$i(pid+'-intro').style.display='block';}
 
 // ── PAGE NAVIGATION ──
 const pages=document.querySelectorAll('.page');
