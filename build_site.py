@@ -623,18 +623,27 @@ def add_tts_to_tables(html):
     return re.sub(r'<td>((?:(?!</td>).)+)</td>', replace_td, html)
 
 def fix_links(html):
-    """Convert bare URLs and cestina-pro-cizince references into anchor tags."""
-    # Official links
+    """Convert bare URLs into proper anchor tags."""
     url_map = {
-        'https://cestina-pro-cizince.cz/obcanstvi/en/': ('🌐 cestina-pro-cizince.cz — Official Exam Site', 'Main site for the Czech language citizenship exam'),
-        'https://cestina-pro-cizince.cz/obcanstvi/en/databanka-uloh/': ('📋 All 300 Exam Questions (free!)', 'Full question database — download and practise all possible questions'),
-        'https://cestina-pro-cizince.cz/obcanstvi/en/interaktivni-modelovy-test/': ('🧪 Free Practice Test', 'Official interactive mock test — simulate the real exam'),
+        'https://cestina-pro-cizince.cz/obcanstvi/wp-content/uploads/2023/12/zkobc-modelova-varianta_2024.pdf':
+            '📄 Download Sample B1 Exam (PDF)',
+        'https://cestina-pro-cizince.cz/obcanstvi/en/zkouska-z-ceskeho-jazyka/ke-stazeni-jazyk/':
+            '📥 All Language Exam Downloads',
+        'https://cestina-pro-cizince.cz/obcanstvi/en/zkouska-z-ceskeho-jazyka/priprava-na-zkousku/modelova-varianta-zkousky-z-ceskeho-jazyka/':
+            '🧪 Sample B1 Test Page',
+        'https://cestina-pro-cizince.cz/obcanstvi/en/zkouska-z-ceskeho-jazyka/':
+            '🌐 B1 Language Exam Info',
+        'https://cestina-pro-cizince.cz/obcanstvi/en/databanka-uloh/':
+            '📋 All 300 Exam Questions (free!)',
+        'https://cestina-pro-cizince.cz/obcanstvi/en/interaktivni-modelovy-test/':
+            '🧪 Free Interactive Practice Test',
+        'https://obcanstvi.cestina-pro-cizince.cz/index.php?p=ke-stazeni-2&hl=en_US':
+            '📥 All Life & Institutions Downloads',
+        'https://cestina-pro-cizince.cz/obcanstvi/en/':
+            '🌐 cestina-pro-cizince.cz — Official Exam Site',
     }
-    for url, (label, desc) in url_map.items():
-        html = html.replace(
-            url,
-            f'<a href="{url}" target="_blank" rel="noopener">{label}</a>'
-        )
+    for url, label in url_map.items():
+        html = html.replace(url, f'<a href="{url}" target="_blank" rel="noopener">{label}</a>')
     return html
 
 def make_practice_panel(panel_id, cards_key, include_citizenship=False):
@@ -763,17 +772,41 @@ def make_official_links_block():
     return '''
 <div class="official-links">
   <h4>🔗 Official Exam Resources</h4>
-  <a href="https://cestina-pro-cizince.cz/obcanstvi/en/" target="_blank" rel="noopener">
-    🌐 cestina-pro-cizince.cz — Official Exam Site
-    <span>The central hub for the Czech language citizenship exam</span>
+  <div style="font-size:11px;color:var(--muted);margin-bottom:10px;padding:6px 12px;background:rgba(79,142,247,.07);border-radius:6px;">
+    ⚠️ <strong style="color:var(--yellow);">Citizenship exam = B1 level.</strong>
+    A2 is for permanent residence (trvalý pobyt) — a separate, earlier exam.
+  </div>
+
+  <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin:8px 0 6px;">Language Exam (B1)</div>
+  <a href="https://cestina-pro-cizince.cz/obcanstvi/en/zkouska-z-ceskeho-jazyka/" target="_blank" rel="noopener">
+    🌐 B1 Language Exam — Info Page
+    <span>Reading 50min · Listening 30min · Writing 60min · Speaking 15min · Fee CZK 3,700</span>
   </a>
+  <a href="https://cestina-pro-cizince.cz/obcanstvi/wp-content/uploads/2023/12/zkobc-modelova-varianta_2024.pdf" target="_blank" rel="noopener">
+    📄 Download Sample B1 Exam (PDF) — 2024 edition
+    <span>Official model test from ÚJOP Charles University — includes answer key</span>
+  </a>
+  <a href="https://cestina-pro-cizince.cz/obcanstvi/en/zkouska-z-ceskeho-jazyka/priprava-na-zkousku/modelova-varianta-zkousky-z-ceskeho-jazyka/" target="_blank" rel="noopener">
+    🧪 Sample Test Page (+ listening MP3)
+    <span>Download page for the official B1 model exam including audio file</span>
+  </a>
+  <a href="https://cestina-pro-cizince.cz/obcanstvi/en/zkouska-z-ceskeho-jazyka/ke-stazeni-jazyk/" target="_blank" rel="noopener">
+    📥 All Language Exam Downloads
+    <span>Sample exam PDF, listening MP3, information for candidates, exam rules</span>
+  </a>
+
+  <div style="font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin:14px 0 6px;">Life &amp; Institutions Exam</div>
   <a href="https://cestina-pro-cizince.cz/obcanstvi/en/databanka-uloh/" target="_blank" rel="noopener">
     📋 All 300 Exam Questions (free!)
-    <span>Download the full question database — all possible exam questions are published here</span>
+    <span>Full question database — all possible exam questions are published here in advance</span>
   </a>
   <a href="https://cestina-pro-cizince.cz/obcanstvi/en/interaktivni-modelovy-test/" target="_blank" rel="noopener">
-    🧪 Free Practice Test
-    <span>Official interactive mock test — simulate the real citizenship exam online</span>
+    🧪 Free Interactive Practice Test
+    <span>Simulate the real 30-question citizenship knowledge exam online</span>
+  </a>
+  <a href="https://obcanstvi.cestina-pro-cizince.cz/index.php?p=ke-stazeni-2&hl=en_US" target="_blank" rel="noopener">
+    📥 All Life &amp; Institutions Downloads
+    <span>Sample exam, question database PDF, monolingual dictionary, candidate info</span>
   </a>
 </div>
 '''
