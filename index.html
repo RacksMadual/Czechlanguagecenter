@@ -191,6 +191,9 @@ body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(
 
 /* ─── EXAM BLOCK ─────────────────────────────────── */
 .exam-block{margin-top:40px;border-top:2px solid var(--border);padding-top:28px;}
+.topic-btn{padding:7px 13px;border-radius:20px;font-size:12px;font-weight:600;background:var(--surface2);border:1px solid var(--border);color:var(--muted);cursor:pointer;transition:all .15s;}
+.topic-btn:hover{background:var(--surface3);border-color:var(--yellow);color:var(--yellow);}
+.topic-btn.done{border-color:var(--green);color:var(--green);}
 .exam-intro,.exam-result{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:28px;text-align:center;}
 .exam-title{font-size:20px;font-weight:800;color:var(--accent);margin-bottom:10px;}
 .exam-desc{font-size:14px;color:var(--muted);margin-bottom:16px;line-height:1.6;}
@@ -8331,12 +8334,12 @@ Include: how long you've been here, what you like, what is difficult, why you wa
 <h2 style="color:#a78bfa;">Simulátor 1 — Čtení (B1 jazyková zkouška)</h2>
 <p><em style="color:#94a3b8;">Reading comprehension simulator — all questions are in Czech, exactly as on the real B1 language exam. Read each passage carefully and choose the best answer. Texts are the same ones you studied above on this page.</em></p>
 
-<div class="exam-block" id="exam-b1-reading" data-exam='[{"q":"TEXT 1 — Bydlení v Praze\n\nProč je koupě vlastního bytu v Praze problém pro mnoho lidí?","a":"Protože ceny bytů jsou velmi vysoké.","opts":["Protože v Praze jsou špatné byty.","Protože ceny bytů jsou velmi vysoké.","Protože v Praze není dost bytů k pronájmu.","Protože stavba nových bytů je zakázána."]},{"q":"TEXT 1 — Bydlení v Praze\n\nJaká je podle textu alternativa k nákupu vlastního bytu?","a":"Pronájem bytu.","opts":["Žít u rodičů.","Pronájem bytu.","Práce z domova.","Přestěhování do jiného státu."]},{"q":"TEXT 1 — Bydlení v Praze\n\nKde hledají lidé levnější bydlení?","a":"Na okraji města nebo v okolních obcích.","opts":["V centru Prahy.","V sousedních státech.","Na okraji města nebo v okolních obcích.","V obecních bytech."]},{"q":"TEXT 1 — Bydlení v Praze\n\nCo vláda plánuje?","a":"Připravit opatření, například výstavbu obecních bytů nebo podporu hypoték.","opts":["Snížit nájemné zákonem.","Zakázat investiční byty.","Připravit opatření, například výstavbu obecních bytů nebo podporu hypoték.","Nic neplánuje."]},{"q":"TEXT 1 — Bydlení v Praze\n\nCo text NEŘÍKÁ?","a":"Vláda problém bydlení již vyřešila.","opts":["Ceny bytů výrazně vzrostly.","Nájemné v centru Prahy je vysoké.","Lidé hledají bydlení na okraji Prahy.","Vláda problém bydlení již vyřešila."]},{"q":"TEXT 2 — Email od Kateřiny\n\nKdy se Kateřina přestěhovala do Berlína?","a":"Před třemi měsíci.","opts":["Před týdnem.","Před jedním měsícem.","Před třemi měsíci.","Před půl rokem."]},{"q":"TEXT 2 — Email od Kateřiny\n\nProč bylo stěhování na začátku těžké?","a":"Kateřina nemluví německy dobře a musela vyřídit mnoho věcí zároveň.","opts":["Kateřina neměla práci.","Berlín je malé město.","Kateřina nemluví německy dobře a musela vyřídit mnoho věcí zároveň.","Kolegové nemluvili anglicky."]},{"q":"TEXT 2 — Email od Kateřiny\n\nJak Kateřina popisuje svůj byt v Berlíně?","a":"Je malý, ale útulný a poloha je skvělá.","opts":["Je velký a moderní.","Je malý, ale útulný a poloha je skvělá.","Je velký, ale starý a drahý.","Je malý a v špatné čtvrti."]},{"q":"TEXT 2 — Email od Kateřiny\n\nKam chce Kateřina jet o Vánocích?","a":"Do Prahy.","opts":["Do Berlína.","Do Vídně.","Do Prahy.","Nikam — zůstane doma."]},{"q":"TEXT 2 — Email od Kateřiny\n\nCo text NEŘÍKÁ o Kateřině?","a":"Kateřina pracuje jako učitelka.","opts":["Přestěhovala se do Berlína před třemi měsíci.","Většina jejích kolegů mluví anglicky.","Kateřina pracuje jako učitelka.","Stýská se jí po Praze."]},{"q":"OZNÁMENÍ A (Kavárna)\n\nHledáme brigádníka na víkendy do kavárny v centru Prahy. Podmínka: znalost češtiny alespoň na úrovni B1. Nástup ihned.\n\nKdo hledá brigádníka?","a":"Kavárna v centru Prahy.","opts":["Restaurace v Brně.","Kavárna v centru Prahy.","Obchod na okraji města.","Hotel v Praze."]},{"q":"OZNÁMENÍ B (Uzavírka)\n\nDne 15. března bude uzavřena ulice Mánesova kvůli opravě vodovodu. Objízdná trasa přes ulici Blanickou.\n\nProč bude uzavřena ulice Mánesova?","a":"Kvůli opravě vodovodu.","opts":["Kvůli stavbě nové budovy.","Kvůli sportovní události.","Kvůli opravě vodovodu.","Kvůli silnému sněžení."]},{"q":"OZNÁMENÍ E (Ordinace)\n\nZdravotní středisko oznamuje změnu ordinačních hodin. Od 1. dubna: pondělí a středa 8–12 hod., čtvrtek 14–18 hod.\n\nKdy je ordinace otevřena ve čtvrtek?","a":"Od 14 do 18 hodin.","opts":["Od 8 do 12 hodin.","Od 9 do 13 hodin.","Od 14 do 18 hodin.","Od 10 do 16 hodin."]}]' data-pass='60'>
+<div class="exam-block" id="exam-b1-reading" data-exam='[{"q":"TEXT 1 — Bydlení v Praze\n\nProč je koupě vlastního bytu v Praze problém pro mnoho lidí?","a":"Protože ceny bytů jsou velmi vysoké.","opts":["Protože v Praze jsou špatné byty.","Protože ceny bytů jsou velmi vysoké.","Protože v Praze není dost bytů k pronájmu.","Protože stavba nových bytů je zakázána."]},{"q":"TEXT 1 — Bydlení v Praze\n\nJaká je podle textu alternativa k nákupu vlastního bytu?","a":"Pronájem bytu.","opts":["Žít u rodičů.","Pronájem bytu.","Práce z domova.","Přestěhování do jiného státu."]},{"q":"TEXT 1 — Bydlení v Praze\n\nKde hledají lidé levnější bydlení?","a":"Na okraji města nebo v okolních obcích.","opts":["V centru Prahy.","V sousedních státech.","Na okraji města nebo v okolních obcích.","V obecních bytech."]},{"q":"TEXT 1 — Bydlení v Praze\n\nCo text NEŘÍKÁ?","a":"Vláda problém bydlení již vyřešila.","opts":["Ceny bytů výrazně vzrostly.","Nájemné v centru Prahy je vysoké.","Lidé hledají bydlení na okraji Prahy.","Vláda problém bydlení již vyřešila."]},{"q":"TEXT 2 — Email od Kateřiny\n\nKdy se Kateřina přestěhovala do Berlína?","a":"Před třemi měsíci.","opts":["Před týdnem.","Před jedním měsícem.","Před třemi měsíci.","Před půl rokem."]},{"q":"TEXT 2 — Email od Kateřiny\n\nJak Kateřina popisuje svůj byt v Berlíně?","a":"Je malý, ale útulný a poloha je skvělá.","opts":["Je velký a moderní.","Je malý, ale útulný a poloha je skvělá.","Je velký, ale starý a drahý.","Je malý a v špatné čtvrti."]},{"q":"TEXT 2 — Email od Kateřiny\n\nCo text NEŘÍKÁ o Kateřině?","a":"Kateřina pracuje jako učitelka.","opts":["Přestěhovala se do Berlína před třemi měsíci.","Většina jejích kolegů mluví anglicky.","Kateřina pracuje jako učitelka.","Stýská se jí po Praze."]},{"q":"TEXT 3 — Zprávy: Zákon o bydlení\n\nČeská vláda dnes schválila nový zákon o podpoře bydlení pro mladé rodiny. Zákon umožňuje rodinám s dětmi do 36 let získat státní příspěvek na hypotéku ve výši až 300 000 korun. Podmínkou je, že kupují svůj první byt nebo dům a jejich příjem nepřesahuje stanovený limit. Zákon vstoupí v platnost od prvního července. Odborníci zákon vítají, ale upozorňují, že sám o sobě problém nedostupnosti bydlení nevyřeší.\n\nCo vláda schválila?","a":"Nový zákon o podpoře bydlení pro mladé rodiny.","opts":["Nový zákon o podpoře bydlení pro mladé rodiny.","Zákon o snížení daní.","Zákon o výstavbě dálnic.","Zákon o zvýšení důchodů."]},{"q":"TEXT 3 — Zprávy: Zákon o bydlení\n\nKolik peněz mohou rodiny získat na hypotéku?","a":"Až 300 000 korun.","opts":["Až 100 000 korun.","Až 200 000 korun.","Až 300 000 korun.","Až 500 000 korun."]},{"q":"TEXT 3 — Zprávy: Zákon o bydlení\n\nKdy zákon vstoupí v platnost?","a":"Od prvního července.","opts":["Od prvního ledna.","Od prvního dubna.","Od prvního července.","Od prvního října."]},{"q":"TEXT 3 — Zprávy: Zákon o bydlení\n\nJaký je postoj odborníků k novému zákonu?","a":"Zákon vítají, ale myslí si, že sám problém nedostupnosti bydlení nevyřeší.","opts":["Zákon ostře kritizují.","Zákon vítají, ale myslí si, že sám problém nedostupnosti bydlení nevyřeší.","Zákon plně podporují bez výhrad.","O zákonu se odmítají vyjadřovat."]},{"q":"TEXT 4 — Rozhovor: Návrat domů\n\nMilena Dvořáková žila deset let v Londýně. Rozhodla se vrátit do Čech, protože se jí stýskalo po rodině a rodiče stárnou. Po návratu ji nejvíce překvapilo, jak se Praha změnila — je modernější a kosmopolitnější než dříve. Ceny bytů jsou ovšem velmi vysoké, skoro jako v Londýně. Milena říká, že návrat je náročný, ale pokud máte v Čechách rodinu a přátele, stojí to za to.\n\nProč se Milena rozhodla vrátit do České republiky?","a":"Stýskalo se jí po rodině a rodiče stárnou.","opts":["Ztratila práci v Londýně.","Stýskalo se jí po rodině a rodiče stárnou.","Nelíbilo se jí britské počasí.","Dostala lepší pracovní nabídku v Praze."]},{"q":"TEXT 4 — Rozhovor: Návrat domů\n\nCo Milenu po návratu nejvíce překvapilo?","a":"Jak se Praha změnila — je modernější a kosmopolitnější.","opts":["Jak se Praha nezměnila.","Jak se Praha změnila — je modernější a kosmopolitnější.","Jak drahá je veřejná doprava.","Jak přátelé na ni zapomněli."]},{"q":"TEXT 4 — Rozhovor: Návrat domů\n\nJak Milena popisuje ceny bytů v Praze?","a":"Jsou velmi vysoké, skoro jako v Londýně.","opts":["Jsou nízké a dostupné.","Jsou střední — ani levné, ani drahé.","Jsou velmi vysoké, skoro jako v Londýně.","Jsou levnější než v Londýně."]},{"q":"OZNÁMENÍ A — Brigáda v kavárně\n\nHledáme brigádníka/brigádnici na víkendy do kavárny v centru Prahy. Podmínka: znalost češtiny alespoň na úrovni B1. Nástup ihned. Tel.: 777 888 999.\n\nKdo je vhodný kandidát na tuto brigádu?","a":"Někdo, kdo mluví česky alespoň na úrovni B1 a může pracovat o víkendu.","opts":["Někdo, kdo mluví plynně německy.","Někdo, kdo mluví česky alespoň na úrovni B1 a může pracovat o víkendu.","Někdo, kdo má VŠ vzdělání.","Někdo, kdo může pracovat jen ve všední dny."]},{"q":"OZNÁMENÍ E — Změna ordinačních hodin\n\nZdravotní středisko oznamuje změnu ordinačních hodin. Od 1. dubna: pondělí a středa 8–12 hod., čtvrtek 14–18 hod.\n\nKdy je ordinace otevřena ve čtvrtek?","a":"Od 14 do 18 hodin.","opts":["Od 8 do 12 hodin.","Od 9 do 13 hodin.","Od 14 do 18 hodin.","Od 10 do 16 hodin."]}]' data-pass='60'>
   <div class="exam-intro" id="exam-b1-reading-intro">
     <div class="exam-title">📖 Simulátor čtení — B1 (jazyková zkouška)</div>
     <div class="exam-desc">Simulace části Čtení z jazykové zkoušky B1 pro státní občanství. Všechny otázky jsou v češtině přesně tak, jak se objeví na skutečné zkoušce. Přečtěte si texty výše na stránce a pak zodpovězte otázky. Potřebujete 60 % správných odpovědí.</div>
     <div class="exam-meta">
-      <span>❓ 13 otázek</span>
+      <span>❓ 16 otázek</span>
       <span>✅ Úspěšnost: 60 %</span>
       <span>📋 Výběr z možností</span>
       <span>🇨🇿 Pouze česky</span>
@@ -8348,7 +8351,7 @@ Include: how long you've been here, what you like, what is difficult, why you wa
   </div>
   <div class="exam-session" id="exam-b1-reading-session" style="display:none">
     <div class="exam-header">
-      <div class="exam-progress-text" id="exam-b1-reading-prog-text">Otázka 1 / 13</div>
+      <div class="exam-progress-text" id="exam-b1-reading-prog-text">Otázka 1 / 16</div>
       <div class="exam-score-live" id="exam-b1-reading-score-live">Skóre: 0</div>
     </div>
     <div class="exam-prog-bar"><div class="exam-prog-fill" id="exam-b1-reading-prog-fill" style="width:0%"></div></div>
@@ -8372,15 +8375,85 @@ Include: how long you've been here, what you like, what is difficult, why you wa
      Source: Ministry of Interior Czech Republic — all topics published
      ═══════════════════════════════════════════════════════════ -->
 <hr>
-<h2 style="color:#22c55e;">Simulátor 2 — Zkouška ze znalosti České republiky</h2>
-<p><em style="color:#94a3b8;">Life &amp; Institutions exam simulator — all questions are in Czech exactly as on the official exam. The real exam has 30 questions (20 min); you need 18 correct (60%). All topics come from the official published question bank (Ministry of Interior / mvcr.cz). Review File 03 first to study the topics in English.</em></p>
+<h2 style="color:#f59e0b;">Procvičování podle témat — Zkouška ze znalosti ČR</h2>
+<p style="color:#94a3b8;margin-bottom:8px;"><em>Practise by topic before taking the full exam. Each button gives you 5 questions from that official topic area. Topics match the official Ministry of Interior question bank (all 30 official areas).</em></p>
+<div style="background:#1a1d2e;border:1px solid #2d3154;border-radius:12px;padding:20px 24px;margin:16px 0 24px;">
+  <div style="font-size:12px;font-weight:700;color:#f59e0b;text-transform:uppercase;letter-spacing:.07em;margin-bottom:14px;">Vyberte téma — Choose a topic to practise (5 questions)</div>
+  <div style="display:flex;flex-wrap:wrap;gap:8px;" id="topic-btn-grid">
+    <button class="topic-btn" onclick="startTopicPractice('Státní symboly')">1. Státní symboly</button>
+    <button class="topic-btn" onclick="startTopicPractice('Státní svátky')">2. Státní svátky</button>
+    <button class="topic-btn" onclick="startTopicPractice('Parlament')">3. Parlament</button>
+    <button class="topic-btn" onclick="startTopicPractice('Prezident')">4. Prezident</button>
+    <button class="topic-btn" onclick="startTopicPractice('Soudní systém')">5. Soudní systém</button>
+    <button class="topic-btn" onclick="startTopicPractice('Zdravotní systém')">6. Zdravotní systém</button>
+    <button class="topic-btn" onclick="startTopicPractice('Sociální zabezpečení')">7. Sociální zabezpečení</button>
+    <button class="topic-btn" onclick="startTopicPractice('Pracovní právo')">8. Pracovní právo</button>
+    <button class="topic-btn" onclick="startTopicPractice('Vzdělávání')">9. Vzdělávání</button>
+    <button class="topic-btn" onclick="startTopicPractice('Zvyky a tradice')">10. Zvyky a tradice</button>
+    <button class="topic-btn" onclick="startTopicPractice('Rodina a právo')">11. Rodina a právo</button>
+    <button class="topic-btn" onclick="startTopicPractice('Bydlení')">12. Bydlení</button>
+    <button class="topic-btn" onclick="startTopicPractice('Doprava')">13. Doprava</button>
+    <button class="topic-btn" onclick="startTopicPractice('Životní prostředí')">14. Životní prostředí</button>
+    <button class="topic-btn" onclick="startTopicPractice('Média a komunikace')">15. Média a komunikace</button>
+    <button class="topic-btn" onclick="startTopicPractice('Nakupování a služby')">16. Nakupování a služby</button>
+    <button class="topic-btn" onclick="startTopicPractice('Hlavní město Praha')">17. Praha</button>
+    <button class="topic-btn" onclick="startTopicPractice('Sousední státy')">18. Sousední státy</button>
+    <button class="topic-btn" onclick="startTopicPractice('Kraje ČR')">19. Kraje ČR</button>
+    <button class="topic-btn" onclick="startTopicPractice('Řeky')">20. Řeky</button>
+    <button class="topic-btn" onclick="startTopicPractice('Hory')">21. Hory</button>
+    <button class="topic-btn" onclick="startTopicPractice('Slavná místa')">22. Slavná místa</button>
+    <button class="topic-btn" onclick="startTopicPractice('Příroda')">23. Příroda ČR</button>
+    <button class="topic-btn" onclick="startTopicPractice('Národní hrdinové')">24. Národní hrdinové</button>
+    <button class="topic-btn" onclick="startTopicPractice('Historie')">25. Historie</button>
+    <button class="topic-btn" onclick="startTopicPractice('Kulturní osobnosti')">26. Kulturní osobnosti</button>
+    <button class="topic-btn" onclick="startTopicPractice('Česká vynálezy')">27. Česká vynálezy</button>
+    <button class="topic-btn" onclick="startTopicPractice('Kultura a umění')">28. Kultura a umění</button>
+    <button class="topic-btn" onclick="startTopicPractice('Sport')">29. Sport</button>
+    <button class="topic-btn" onclick="startTopicPractice('Literatura a vzdělanost')">30. Literatura a vzdělanost</button>
+  </div>
+</div>
+
+<!-- Topic Practice Exam Block -->
+<div class="exam-block" id="exam-topic" style="display:none;">
+  <div class="exam-intro" id="exam-topic-intro" style="display:none;">
+    <div class="exam-title" id="exam-topic-title">📚 Procvičování tématu</div>
+    <div class="exam-desc" id="exam-topic-desc">Vyberte téma výše.</div>
+    <button class="exam-start-btn" onclick="document.getElementById('exam-topic').style.display='none'">← Zpět na výběr témat</button>
+  </div>
+  <div class="exam-session" id="exam-topic-session" style="display:none">
+    <div class="exam-header">
+      <div class="exam-progress-text" id="exam-topic-prog-text">Otázka 1 / 5</div>
+      <div class="exam-score-live" id="exam-topic-score-live">Skóre: 0</div>
+    </div>
+    <div class="exam-prog-bar"><div class="exam-prog-fill" id="exam-topic-prog-fill" style="width:0%"></div></div>
+    <div class="exam-q" id="exam-topic-q"></div>
+    <div class="exam-opts" id="exam-topic-opts"></div>
+    <div class="exam-feedback" id="exam-topic-fb"></div>
+    <button class="exam-next-btn" id="exam-topic-next" style="display:none" onclick="nextExamQ('exam-topic')">Další otázka →</button>
+  </div>
+  <div class="exam-result" id="exam-topic-result" style="display:none">
+    <div class="exam-result-emoji" id="exam-topic-res-emoji"></div>
+    <div class="exam-result-score" id="exam-topic-res-score"></div>
+    <div class="exam-result-sub" id="exam-topic-res-sub"></div>
+    <div class="exam-result-review" id="exam-topic-res-review"></div>
+    <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:8px;">
+      <button class="exam-start-btn" id="exam-topic-retry-btn" onclick="">↺ Zkusit znovu</button>
+      <button class="exam-start-btn" style="background:var(--surface2);border:1px solid var(--border);" onclick="document.getElementById('exam-topic').style.display='none'">← Výběr témat</button>
+    </div>
+  </div>
+</div>
+
+
+<hr>
+<h2 style="color:#22c55e;">Simulátor 2 — Plná zkouška ze znalosti ČR (30 otázek)</h2>
+<p><em style="color:#94a3b8;">Full Life &amp; Institutions exam simulation — 30 questions randomly drawn from the complete question bank of 90+ questions covering all 30 official topics. The real exam has 30 questions (30 min); you need 18 correct (60%). All questions are in Czech as on the official Ministry of Interior exam. Practise individual topics above first, then test yourself here!</em></p>
 
 <div class="exam-block" id="exam-citizenship" data-exam='[{"q":"Jaké barvy jsou na české státní vlajce?","a":"Bílá, červená a modrá.","opts":["Bílá, červená a modrá.","Červená, bílá a zelená.","Modrá, žlutá a červená.","Bílá, modrá a žlutá."]},{"q":"Jak se jmenuje česká státní hymna?","a":"Kde domov můj?","opts":["Kde domov můj?","Čechy krásné, Čechy mé","Vlajka nad Prahou","Naše vlast"]},{"q":"Kdo napsal českou státní hymnu?","a":"Josef Kajetán Tyl (1834)","opts":["Josef Kajetán Tyl (1834)","Bedřich Smetana","Franz Kafka","Václav Havel"]},{"q":"Den české státnosti se slaví ...","a":"28. září","opts":["28. října","28. září","17. listopadu","1. ledna"]},{"q":"Kdy bylo Československo založeno?","a":"28. října 1918","opts":["28. října 1918","17. listopadu 1989","8. května 1945","1. ledna 1993"]},{"q":"Kolik komor má Parlament České republiky?","a":"Dvě — Poslanecká sněmovna a Senát.","opts":["Jednu.","Dvě — Poslanecká sněmovna a Senát.","Tři.","Čtyři."]},{"q":"Kolik poslanců má Poslanecká sněmovna?","a":"200","opts":["81","100","200","300"]},{"q":"Kolik senátorů má Senát České republiky?","a":"81","opts":["61","71","81","100"]},{"q":"Na kolik let se volí prezident České republiky?","a":"Na 5 let (nejvýše 2 funkční období).","opts":["Na 4 roky.","Na 5 let (nejvýše 2 funkční období).","Na 6 let.","Na 7 let."]},{"q":"Kdo je současný prezident České republiky (od roku 2023)?","a":"Petr Pavel","opts":["Miloš Zeman","Václav Havel","Václav Klaus","Petr Pavel"]},{"q":"Kdo byl prvním prezidentem Československa?","a":"T. G. Masaryk (1918)","opts":["Václav Havel","Edvard Beneš","T. G. Masaryk (1918)","Antonín Novotný"]},{"q":"Jaká je měna České republiky?","a":"Koruna česká (Kč)","opts":["Euro (€)","Koruna česká (Kč)","Forint","Zlotý"]},{"q":"Jaké je hlavní město České republiky?","a":"Praha","opts":["Brno","Ostrava","Olomouc","Praha"]},{"q":"Kolik krajů má Česká republika?","a":"14","opts":["10","12","14","16"]},{"q":"Kdy se Česká republika osamostatnila od Slovenska?","a":"1. ledna 1993","opts":["17. listopadu 1989","28. října 1990","1. ledna 1993","1. května 1994"]},{"q":"Která řeka protéká Prahou?","a":"Vltava","opts":["Labe","Morava","Vltava","Ohře"]},{"q":"Která hora je nejvyšší v České republice?","a":"Sněžka (1 602 m)","opts":["Praděd","Lysá hora","Sněžka (1 602 m)","Říp"]},{"q":"Jaké je telefonní číslo záchranné služby v ČR?","a":"155","opts":["112","150","155","158"]},{"q":"Jaké je telefonní číslo policie v ČR?","a":"158","opts":["112","150","155","158"]},{"q":"Jaké je celoevropské jednotné tísňové číslo?","a":"112","opts":["110","111","112","999"]},{"q":"Ve kterém roce vstoupila Česká republika do Evropské unie?","a":"2004","opts":["1999","2001","2004","2007"]},{"q":"Ve kterém roce vstoupila Česká republika do NATO?","a":"1999","opts":["1993","1999","2004","2007"]},{"q":"Kdy začala Sametová revoluce?","a":"17. listopadu 1989","opts":["28. října 1989","17. listopadu 1989","1. ledna 1990","28. října 1990"]},{"q":"Ve kterém roce byl Jan Hus upálen na hranici?","a":"1415","opts":["1348","1415","1620","1848"]},{"q":"Kdo je patronem Čech a Moravy?","a":"Svatý Václav (sv. Václav)","opts":["Sv. Jan Nepomucký","Sv. Prokop","Svatý Václav (sv. Václav)","Sv. Cyril"]},{"q":"Ve kterém roce proběhl Sametový rozvod (rozdělení Československa)?","a":"1993","opts":["1989","1991","1993","1995"]},{"q":"Den vítězství (konec 2. světové války) se v ČR slaví ...","a":"8. května","opts":["1. května","8. května","28. října","17. listopadu"]},{"q":"Svátek práce se v ČR slaví ...","a":"1. května","opts":["1. března","8. května","1. května","28. října"]},{"q":"Kdo stojí v čele české vlády?","a":"Předseda vlády (premiér)","opts":["Prezident","Předseda Poslanecké sněmovny","Předseda vlády (premiér)","Předseda Senátu"]},{"q":"Jak často se konají volby do Poslanecké sněmovny?","a":"Každé 4 roky.","opts":["Každé 2 roky.","Každé 4 roky.","Každých 5 let.","Každých 6 let."]}]' data-pass='60'>
   <div class="exam-intro" id="exam-citizenship-intro">
     <div class="exam-title">🏛️ Simulátor zkoušky ze znalosti ČR</div>
     <div class="exam-desc">Simulace skutečné zkoušky ze znalosti České republiky pro státní občanství. Všechny otázky jsou v češtině přesně tak, jak se objeví na skutečné zkoušce. Vycházejí z oficiálního seznamu 30 témat zveřejněného Ministerstvem vnitra ČR. Potřebujete 60 % správných odpovědí (18 z 30). Opakujte zkoušku, dokud nedosáhnete 100 %!</div>
     <div class="exam-meta">
-      <span>❓ 20 otázek (z 30)</span>
+      <span>❓ 30 otázek (plná zkouška)</span>
       <span>✅ Úspěšnost: 60 %</span>
       <span>📋 Výběr z možností</span>
       <span>🇨🇿 Pouze česky</span>
@@ -8392,7 +8465,7 @@ Include: how long you've been here, what you like, what is difficult, why you wa
   </div>
   <div class="exam-session" id="exam-citizenship-session" style="display:none">
     <div class="exam-header">
-      <div class="exam-progress-text" id="exam-citizenship-prog-text">Otázka 1 / 20</div>
+      <div class="exam-progress-text" id="exam-citizenship-prog-text">Otázka 1 / 30</div>
       <div class="exam-score-live" id="exam-citizenship-score-live">Skóre: 0</div>
     </div>
     <div class="exam-prog-bar"><div class="exam-prog-fill" id="exam-citizenship-prog-fill" style="width:0%"></div></div>
@@ -9041,12 +9114,174 @@ function czShowResult(pid){
   STREAK++;localStorage.setItem('streak',STREAK);updateXPBar();
 }
 
+// ── LIFE & INSTITUTIONS QUESTION BANK (90+ questions, all 30 official topics) ──
+// Source: Official Czech Ministry of Interior citizenship exam topic list
+// All questions match the format and content of the official question bank (mvcr.cz / cestina-pro-cizince.cz)
+const lifeBank=[
+// T01 Státní symboly
+{t:"Státní symboly",q:"Jaké barvy jsou na české státní vlajce?",a:"Bílá, červená a modrá.",opts:["Bílá, červená a modrá.","Červená, bílá a zelená.","Modrá, žlutá a červená.","Bílá, modrá a žlutá."]},
+{t:"Státní symboly",q:"Jak se jmenuje česká státní hymna?",a:"Kde domov můj?",opts:["Kde domov můj?","Čechy krásné, Čechy mé","Má vlast","Naše vlast"]},
+{t:"Státní symboly",q:"Kdo napsal text české státní hymny?",a:"Josef Kajetán Tyl (1834)",opts:["Josef Kajetán Tyl (1834)","Bedřich Smetana","Karel Čapek","Václav Havel"]},
+{t:"Státní symboly",q:"Co zobrazuje český státní znak?",a:"Dvojocasého bílého lva, orla a červenobílého orla (Čechy, Slezsko, Morava).",opts:["Pouze lva a orla.","Dvojocasého bílého lva, orla a červenobílého orla (Čechy, Slezsko, Morava).","Lva a hvězdy.","Hradní věž a lva."]},
+// T02 Státní svátky
+{t:"Státní svátky",q:"Den české státnosti se slaví ...",a:"28. září.",opts:["28. října.","28. září.","17. listopadu.","1. ledna."]},
+{t:"Státní svátky",q:"Kdy se slaví Den vzniku Československa?",a:"28. října.",opts:["28. října.","28. září.","17. listopadu.","1. ledna."]},
+{t:"Státní svátky",q:"Kdy se slaví Den vítězství (konec 2. světové války) v ČR?",a:"8. května.",opts:["1. května.","8. května.","28. října.","17. listopadu."]},
+{t:"Státní svátky",q:"Kdy se slaví Den boje za svobodu a demokracii (Sametová revoluce)?",a:"17. listopadu.",opts:["1. listopadu.","17. října.","17. listopadu.","28. října."]},
+{t:"Státní svátky",q:"Kdy se slaví Svátek práce v ČR?",a:"1. května.",opts:["1. března.","8. března.","1. dubna.","1. května."]},
+{t:"Státní svátky",q:"Den slovanských věrozvěstů Cyrila a Metoděje se slaví ...",a:"5. července.",opts:["5. července.","6. července.","28. září.","1. ledna."]},
+// T03 Parlament
+{t:"Parlament",q:"Kolik komor má Parlament České republiky?",a:"Dvě — Poslanecká sněmovna a Senát.",opts:["Jednu.","Dvě — Poslanecká sněmovna a Senát.","Tři.","Čtyři."]},
+{t:"Parlament",q:"Kolik poslanců má Poslanecká sněmovna?",a:"200",opts:["81","150","200","300"]},
+{t:"Parlament",q:"Kolik senátorů má Senát České republiky?",a:"81",opts:["61","71","81","101"]},
+{t:"Parlament",q:"Na kolik let se volí Poslanecká sněmovna?",a:"Na 4 roky.",opts:["Na 2 roky.","Na 4 roky.","Na 5 let.","Na 6 let."]},
+{t:"Parlament",q:"Kdo stojí v čele české vlády?",a:"Předseda vlády (premiér).",opts:["Prezident.","Předseda Senátu.","Předseda vlády (premiér).","Ministr vnitra."]},
+// T04 Prezident
+{t:"Prezident",q:"Kdo je současný prezident České republiky (od roku 2023)?",a:"Petr Pavel.",opts:["Miloš Zeman.","Václav Havel.","Václav Klaus.","Petr Pavel."]},
+{t:"Prezident",q:"Na kolik let se volí prezident České republiky?",a:"Na 5 let (nejvýše 2 funkční období).",opts:["Na 4 roky.","Na 5 let (nejvýše 2 funkční období).","Na 6 let.","Na 7 let."]},
+{t:"Prezident",q:"Kdo byl prvním prezidentem Československa (1918)?",a:"T. G. Masaryk.",opts:["Edvard Beneš.","T. G. Masaryk.","Václav Havel.","Antonín Novotný."]},
+{t:"Prezident",q:"Kde sídlí prezident České republiky?",a:"Na Pražském hradě.",opts:["Na Staroměstském náměstí.","Ve Strakovce.","Na Pražském hradě.","V Černínském paláci."]},
+// T05 Soudní systém
+{t:"Soudní systém",q:"Jak se nazývá nejvyšší soud v ČR, který interpretuje ústavu?",a:"Ústavní soud.",opts:["Nejvyšší soud.","Ústavní soud.","Krajský soud.","Nejvyšší správní soud."]},
+{t:"Soudní systém",q:"Kde sídlí Ústavní soud České republiky?",a:"V Brně.",opts:["V Praze.","V Brně.","V Olomouci.","V Ostravě."]},
+{t:"Soudní systém",q:"Jak se nazývá základní zákon České republiky?",a:"Ústava České republiky.",opts:["Listina základních práv a svobod.","Ústava České republiky.","Zákoník práce.","Občanský zákoník."]},
+{t:"Soudní systém",q:"Jak se nazývá soud, který rozhoduje o správnosti rozhodnutí státní správy?",a:"Nejvyšší správní soud.",opts:["Ústavní soud.","Nejvyšší soud.","Nejvyšší správní soud.","Krajský soud."]},
+// T06 Zdravotní systém
+{t:"Zdravotní systém",q:"Jaké je telefonní číslo záchranné služby (záchranky) v ČR?",a:"155",opts:["112","150","155","158"]},
+{t:"Zdravotní systém",q:"Jaké je telefonní číslo policie v ČR?",a:"158",opts:["112","150","155","158"]},
+{t:"Zdravotní systém",q:"Jaké je celoevropské tísňové číslo?",a:"112",opts:["110","111","112","999"]},
+{t:"Zdravotní systém",q:"Kdo platí zdravotní pojištění za nezaměstnané registrované na úřadu práce?",a:"Stát.",opts:["Zaměstnavatel.","Nezaměstnaný sám.","Stát.","Zdravotní pojišťovna."]},
+{t:"Zdravotní systém",q:"Jaké je číslo tísňového volání hasičů v ČR?",a:"150",opts:["112","150","155","158"]},
+// T07 Sociální zabezpečení
+{t:"Sociální zabezpečení",q:"Jak se nazývá místo, kde se registrují nezaměstnaní v ČR?",a:"Úřad práce.",opts:["Živnostenský úřad.","Úřad práce.","Sociální úřad.","Finanční úřad."]},
+{t:"Sociální zabezpečení",q:"Jak se nazývá finanční podpora pro rodiče malých dětí v ČR?",a:"Rodičovský příspěvek.",opts:["Přídavek na dítě.","Rodičovský příspěvek.","Nemocenské.","Výživné."]},
+{t:"Sociální zabezpečení",q:"Jak se nazývá dávka, která nahrazuje mzdu při nemoci?",a:"Nemocenské.",opts:["Důchod.","Rodičovský příspěvek.","Nemocenské.","Podpora v nezaměstnanosti."]},
+{t:"Sociální zabezpečení",q:"Jak se nazývá státní finanční podpora při ztrátě zaměstnání?",a:"Podpora v nezaměstnanosti.",opts:["Nemocenské.","Rodičovský příspěvek.","Podpora v nezaměstnanosti.","Sociální příplatek."]},
+// T08 Pracovní právo
+{t:"Pracovní právo",q:"Jak dlouhá je zákonná minimální výpovědní lhůta v ČR?",a:"2 měsíce.",opts:["1 měsíc.","2 měsíce.","3 měsíce.","6 měsíců."]},
+{t:"Pracovní právo",q:"Kolik týdnů dovolené má zaměstnanec ze zákona v ČR?",a:"Minimálně 4 týdny.",opts:["Minimálně 2 týdny.","Minimálně 3 týdny.","Minimálně 4 týdny.","Minimálně 6 týdnů."]},
+{t:"Pracovní právo",q:"Jaká je zákonná záruční lhůta na zboží v ČR?",a:"24 měsíců.",opts:["12 měsíců.","18 měsíců.","24 měsíců.","36 měsíců."]},
+{t:"Pracovní právo",q:"Kdo v ČR musí platit sociální a zdravotní pojištění?",a:"Každý zaměstnaný i OSVČ (osoba samostatně výdělečně činná).",opts:["Pouze zaměstnavatelé.","Každý zaměstnaný i OSVČ (osoba samostatně výdělečně činná).","Pouze státní zaměstnanci.","Pouze osoby s příjmem nad 50 000 Kč."]},
+// T09 Vzdělávání
+{t:"Vzdělávání",q:"Kolik let trvá povinná školní docházka v ČR?",a:"9 let.",opts:["6 let.","8 let.","9 let.","12 let."]},
+{t:"Vzdělávání",q:"Ve kterém roce byla v Praze founded Karlova univerzita?",a:"1348",opts:["1066","1348","1618","1918"]},
+{t:"Vzdělávání",q:"Kdo je zakladatelem Karlovy univerzity v Praze?",a:"Karel IV.",opts:["Karel I.","Karel IV.","T. G. Masaryk","Václav Havel"]},
+{t:"Vzdělávání",q:"Jak se nazývá zkouška na konci střední školy (maturitní zkouška)?",a:"Maturita.",opts:["Abitur.","Maturita.","Státní zkouška.","Závěrečná zkouška."]},
+// T10 Zvyky a tradice
+{t:"Zvyky a tradice",q:"Jak se nazývá tradiční česká vánoční večeře?",a:"Kapr s bramborovým salátem.",opts:["Svíčková s knedlíkem.","Vepřová s knedlíkem.","Kapr s bramborovým salátem.","Kachna se zelím."]},
+{t:"Zvyky a tradice",q:"Jaký tradiční zvyk se pojí s Velikonocemi v ČR?",a:"Pomlázka — chlapci šlehají dívky ozdobenými proutky.",opts:["Pálení čarodějnic.","Pomlázka — chlapci šlehají dívky ozdobenými proutky.","Stavění máje.","Karneval."]},
+{t:"Zvyky a tradice",q:"Kdy je Štědrý den (hlavní vánoční den) v ČR?",a:"24. prosince.",opts:["23. prosince.","24. prosince.","25. prosince.","26. prosince."]},
+{t:"Zvyky a tradice",q:"Jak se nazývá tradiční masopustní oslava před Popeleční středou?",a:"Masopust.",opts:["Karneval.","Masopust.","Dožínky.","Pálení čarodějnic."]},
+// T11 Rodina a právo
+{t:"Rodina a právo",q:"Jak se nazývá dokument, který potvrzuje uzavření sňatku?",a:"Oddací list.",opts:["Rodný list.","Oddací list.","Průkaz totožnosti.","Rodinný list."]},
+{t:"Rodina a právo",q:"Jak se v češtině nazývá rozvod manželství?",a:"Rozvod.",opts:["Rozvod.","Sňatek.","Rozluka.","Oddíl."]},
+{t:"Rodina a právo",q:"Jak se nazývá finanční příspěvek placený rodiči dítěti po rozvodu?",a:"Výživné.",opts:["Alimenty.","Výživné.","Rodičovský příspěvek.","Dědictví."]},
+// T12 Bydlení
+{t:"Bydlení",q:"Jak se v češtině nazývá smlouva mezi majitelem bytu a nájemcem?",a:"Nájemní smlouva.",opts:["Kupní smlouva.","Nájemní smlouva.","Hypoteční smlouva.","Zástavní smlouva."]},
+{t:"Bydlení",q:"Jak se nazývá úřad, kde se hlásí trvalý pobyt v ČR?",a:"Ohlašovna (odbor správních agend obecního úřadu).",opts:["Úřad práce.","Ohlašovna (odbor správních agend obecního úřadu).","Cizinecká policie.","Matrika."]},
+{t:"Bydlení",q:"Jak se nazývá úvěr na koupi bytu nebo domu?",a:"Hypotéka.",opts:["Půjčka.","Hypotéka.","Leasing.","Záloha."]},
+// T13 Doprava
+{t:"Doprava",q:"Co musí mít řidič auta v ČR povinně sjednané?",a:"Povinné ručení (pojištění odpovědnosti z provozu vozidla).",opts:["Havarijní pojištění.","Povinné ručení (pojištění odpovědnosti z provozu vozidla).","Životní pojištění.","Cestovní pojištění."]},
+{t:"Doprava",q:"Jaká je rychlostní limita v obci v ČR?",a:"50 km/h.",opts:["30 km/h.","50 km/h.","70 km/h.","90 km/h."]},
+{t:"Doprava",q:"Jaká je rychlostní limita na dálnici v ČR?",a:"130 km/h.",opts:["100 km/h.","110 km/h.","120 km/h.","130 km/h."]},
+// T14 Životní prostředí
+{t:"Životní prostředí",q:"Jak se nazývá systém třídění odpadů v ČR?",a:"Separovaný sběr (třídění odpadů do barevných kontejnerů).",opts:["Likvidace odpadu.","Separovaný sběr (třídění odpadů do barevných kontejnerů).","Kompostování.","Centrální sběr."]},
+{t:"Životní prostředí",q:"Jakým kontejnerem se v ČR třídí papír?",a:"Modrý kontejner.",opts:["Žlutý kontejner.","Modrý kontejner.","Zelený kontejner.","Šedý kontejner."]},
+{t:"Životní prostředí",q:"Jakým kontejnerem se v ČR třídí plasty?",a:"Žlutý kontejner.",opts:["Žlutý kontejner.","Modrý kontejner.","Zelený kontejner.","Červený kontejner."]},
+// T15 Média a komunikace
+{t:"Média a komunikace",q:"Jak se nazývá česká veřejnoprávní televize?",a:"Česká televize (ČT).",opts:["TV Nova.","Prima TV.","Česká televize (ČT).","ČT24."]},
+{t:"Média a komunikace",q:"Jak se nazývá česká veřejnoprávní rozhlasová stanice?",a:"Český rozhlas (ČRo).",opts:["Rádio Impuls.","Frekvence 1.","Český rozhlas (ČRo).","Radio Beat."]},
+{t:"Média a komunikace",q:"Jak se nazývá česká tisková agentura?",a:"ČTK — Česká tisková kancelář.",opts:["APF.","ČTK — Česká tisková kancelář.","Novinky.cz.","iDnes."]},
+// T16 Nakupování a služby
+{t:"Nakupování a služby",q:"Jak se nazývá daň zahrnutá v ceně zboží v ČR?",a:"DPH — daň z přidané hodnoty.",opts:["Spotřební daň.","DPH — daň z přidané hodnoty.","Daň z příjmu.","Clo."]},
+{t:"Nakupování a služby",q:"Jak dlouhá je zákonná záruka na zboží v ČR?",a:"24 měsíců.",opts:["12 měsíců.","18 měsíců.","24 měsíců.","36 měsíců."]},
+{t:"Nakupování a služby",q:"Kde si může spotřebitel stěžovat na nekvalitní zboží nebo klamavou reklamu?",a:"České obchodní inspekci (ČOI).",opts:["Na úřadě práce.","České obchodní inspekci (ČOI).","Na policii.","Na finančním úřadě."]},
+// T17 Praha
+{t:"Hlavní město Praha",q:"Jaké je hlavní město České republiky?",a:"Praha.",opts:["Brno.","Olomouc.","Praha.","Ostrava."]},
+{t:"Hlavní město Praha",q:"Který most je nejstarším dochovaným kamenným mostem přes Vltavu v Praze?",a:"Karlův most.",opts:["Palacký most.","Nuselský most.","Karlův most.","Čechův most."]},
+{t:"Hlavní město Praha",q:"Na jakém místě sídlí prezident České republiky?",a:"Na Pražském hradě.",opts:["Ve Strakovce.","Na Pražském hradě.","V Černínském paláci.","Na Klárově."]},
+{t:"Hlavní město Praha",q:"Jak se nazývá hlavní náměstí v historickém centru Prahy?",a:"Staroměstské náměstí.",opts:["Václavské náměstí.","Náměstí Míru.","Staroměstské náměstí.","Malostranské náměstí."]},
+// T18 Sousední státy
+{t:"Sousední státy",q:"Se kterými čtyřmi státy sousedí Česká republika?",a:"Německo, Rakousko, Slovensko, Polsko.",opts:["Německo, Rakousko, Maďarsko, Polsko.","Německo, Švýcarsko, Slovensko, Polsko.","Německo, Rakousko, Slovensko, Polsko.","Německo, Francie, Slovensko, Polsko."]},
+{t:"Sousední státy",q:"Který stát sousedí s ČR na jihu?",a:"Rakousko.",opts:["Slovensko.","Německo.","Rakousko.","Polsko."]},
+{t:"Sousední státy",q:"Který stát sousedí s ČR na východě?",a:"Slovensko.",opts:["Maďarsko.","Slovensko.","Polsko.","Německo."]},
+{t:"Sousední státy",q:"Který stát sousedí s ČR na severu a severovýchodě?",a:"Polsko.",opts:["Německo.","Slovensko.","Polsko.","Rakousko."]},
+// T19 Kraje
+{t:"Kraje ČR",q:"Kolik krajů má Česká republika?",a:"14",opts:["10","12","14","16"]},
+{t:"Kraje ČR",q:"Jak se jmenuje kraj, jehož správním centrem je Brno?",a:"Jihomoravský kraj.",opts:["Jihočeský kraj.","Jihomoravský kraj.","Moravskoslezský kraj.","Olomoucký kraj."]},
+{t:"Kraje ČR",q:"Jaké je druhé největší město České republiky?",a:"Brno.",opts:["Ostrava.","Brno.","Plzeň.","Olomouc."]},
+{t:"Kraje ČR",q:"Ve kterém kraji leží Ostrava?",a:"V Moravskoslezském kraji.",opts:["Ve Zlínském kraji.","V Olomouckém kraji.","V Moravskoslezském kraji.","Ve Středočeském kraji."]},
+// T20 Řeky
+{t:"Řeky",q:"Která řeka protéká Prahou?",a:"Vltava.",opts:["Labe.","Morava.","Vltava.","Ohře."]},
+{t:"Řeky",q:"Která řeka je nejdelší řekou celá tekoucí po území České republiky?",a:"Vltava.",opts:["Labe.","Vltava.","Morava.","Ohře."]},
+{t:"Řeky",q:"Jak se česky jmenuje řeka Elbe?",a:"Labe.",opts:["Labe.","Morava.","Vltava.","Ohře."]},
+{t:"Řeky",q:"Která řeka je hlavní řekou Moravy?",a:"Morava.",opts:["Vltava.","Labe.","Morava.","Odra."]},
+// T21 Hory
+{t:"Hory",q:"Která hora je nejvyšší horou České republiky?",a:"Sněžka (1 603 m).",opts:["Praděd.","Lysá hora.","Sněžka (1 603 m).","Velká Deštná."]},
+{t:"Hory",q:"Ve kterém pohoří se nachází Sněžka?",a:"V Krkonoších.",opts:["V Jeseníkách.","V Krkonoších.","V Beskydech.","Na Šumavě."]},
+{t:"Hory",q:"Jak se nazývá nejvyšší hora v Jeseníkách?",a:"Praděd.",opts:["Sněžka.","Praděd.","Lysá hora.","Radegast."]},
+{t:"Hory",q:"Jak se nazývá pohoří na jihozápadě ČR, hraničící s Německem?",a:"Šumava.",opts:["Krkonoše.","Beskydy.","Šumava.","Jeseníky."]},
+// T22 Slavná místa
+{t:"Slavná místa",q:"Které město ČR je zapsáno na seznam UNESCO pro svůj hrad a historické centrum?",a:"Český Krumlov.",opts:["Telč.","Český Krumlov.","Kutná Hora.","Třebíč."]},
+{t:"Slavná místa",q:"Kolik míst UNESCO má Česká republika (k roku 2024)?",a:"16",opts:["8","12","16","20"]},
+{t:"Slavná místa",q:"Které město je centrem českobudějovického piva (Budvar)?",a:"České Budějovice.",opts:["Plzeň.","Brno.","České Budějovice.","Praha."]},
+{t:"Slavná místa",q:"Ve kterém českém městě se nachází proslulá Kostnice (ossuary s lidskými kostmi)?",a:"V Kutné Hoře.",opts:["V Terezíně.","V Praze.","V Kutné Hoře.","V Třebíči."]},
+// T23 Příroda
+{t:"Příroda",q:"Jak se nazývá nejnavštěvanější přírodní oblast v ČR s pískovcovými skalami?",a:"Český ráj.",opts:["Adršpach.","Český ráj.","Moravský kras.","Šumava."]},
+{t:"Příroda",q:"Kde se nacházejí proslulé Punkevní jeskyně?",a:"Na jižní Moravě (Moravský kras).",opts:["V Krkonoších.","V Českém ráji.","Na jižní Moravě (Moravský kras).","V Beskydech."]},
+{t:"Příroda",q:"Jak se nazývá největší jezero v ČR oblíbené k letní rekreaci (Severní Čechy)?",a:"Máchovo jezero.",opts:["Nové Mlýny.","Lipno.","Máchovo jezero.","Brněnská přehrada."]},
+// T24 Národní hrdinové
+{t:"Národní hrdinové",q:"Ve kterém roce přišli Cyril a Metoděj na Velkou Moravu?",a:"863",opts:["800","863","929","1000"]},
+{t:"Národní hrdinové",q:"Kdy byl Jan Hus upálen na hranici?",a:"6. července 1415.",opts:["6. července 1415.","28. října 1618.","8. května 1620.","17. listopadu 1939."]},
+{t:"Národní hrdinové",q:"Kdo je patronem Čech a Moravy?",a:"Sv. Václav (svatý Václav).",opts:["Sv. Jan Nepomucký.","Sv. Prokop.","Sv. Václav (svatý Václav).","Sv. Cyril."]},
+{t:"Národní hrdinové",q:"Čím byl Jan Hus (povolání)?",a:"Kněz a profesor Karlovy univerzity.",opts:["Básník a spisovatel.","Kněz a profesor Karlovy univerzity.","Vojenský velitel.","Obchodník."]},
+// T25 Historie
+{t:"Historie",q:"Ve kterém roce vzniklo Československo?",a:"28. října 1918.",opts:["28. října 1918.","17. listopadu 1989.","8. května 1945.","1. ledna 1993."]},
+{t:"Historie",q:"Kdy začala Sametová revoluce?",a:"17. listopadu 1989.",opts:["28. října 1989.","17. listopadu 1989.","1. ledna 1990.","28. října 1990."]},
+{t:"Historie",q:"Ve kterém roce se Česká republika osamostatnila od Slovenska?",a:"1. ledna 1993.",opts:["17. listopadu 1989.","28. října 1990.","1. ledna 1993.","1. května 1994."]},
+{t:"Historie",q:"Ve kterém roce vstoupila ČR do Evropské unie?",a:"1. května 2004.",opts:["1. ledna 1999.","1. března 2002.","1. května 2004.","1. ledna 2007."]},
+{t:"Historie",q:"Ve kterém roce vstoupila ČR do NATO?",a:"1999.",opts:["1993.","1999.","2004.","2007."]},
+{t:"Historie",q:"Jak se nazývalo nenásilné rozdělení Československa v roce 1993?",a:"Sametový rozvod.",opts:["Sametová revoluce.","Sametový rozvod.","Pražské jaro.","Defenestrace."]},
+// T26 Kulturní osobnosti
+{t:"Kulturní osobnosti",q:"Kdo vymyslel slovo „robot"?",a:"Karel Čapek (ve hře R.U.R., 1921).",opts:["Jules Verne.","Karel Čapek (ve hře R.U.R., 1921).","Franz Kafka.","Jaroslav Hašek."]},
+{t:"Kulturní osobnosti",q:"Kdo složil symfonický cyklus Má vlast (část Vltava)?",a:"Bedřich Smetana.",opts:["Antonín Dvořák.","Bedřich Smetana.","Leoš Janáček.","Josef Suk."]},
+{t:"Kulturní osobnosti",q:"Jak se jmenuje slavný román Jaroslava Haška?",a:"Osudy dobrého vojáka Švejka.",opts:["Osudy dobrého vojáka Švejka.","Proces.","Proměna.","Nesnesitelná lehkost bytí."]},
+{t:"Kulturní osobnosti",q:"V jakém jazyce psal Franz Kafka, ačkoli se narodil v Praze?",a:"V němčině.",opts:["V češtině.","V němčině.","V angličtině.","V francouzštině."]},
+{t:"Kulturní osobnosti",q:"Která česká skladba je součástí symfonického cyklu Má vlast a nazývá se jako česká řeka?",a:"Vltava (Bedřich Smetana).",opts:["Labe (Dvořák).","Vltava (Bedřich Smetana).","Morava (Janáček).","Ohře (Suk)."]},
+// T27 Česká vynálezy
+{t:"Česká vynálezy",q:"Kdo vynalezl kontaktní čočky?",a:"Otto Wichterle (1961).",opts:["Jan Evangelista Purkyně.","Otto Wichterle (1961).","Gregor Mendel.","Prokop Diviš."]},
+{t:"Česká vynálezy",q:"Ve kterém českém městě bylo v roce 1842 poprvé uvařeno světlé ležácké pivo?",a:"V Plzni.",opts:["V Praze.","V Brně.","V Plzni.","V Českých Budějovicích."]},
+{t:"Česká vynálezy",q:"Kdo vynalezl hromosvod (bleskosvod) v Čechách v 18. stol.?",a:"Prokop Diviš.",opts:["Nikola Tesla.","Prokop Diviš.","Otto Wichterle.","Jan Evangelista Purkyně."]},
+{t:"Česká vynálezy",q:"Kde se vyrábí proslulé auto Škoda?",a:"V Mladé Boleslavi.",opts:["V Praze.","V Plzni.","V Mladé Boleslavi.","V Brně."]},
+// T28 Kultura a umění
+{t:"Kultura a umění",q:"Jak se jmenuje slavný mezinárodní hudební festival konaný každý rok v Praze od 12. května?",a:"Pražské jaro.",opts:["Smetanova Litomyšl.","Pražské jaro.","Dvořákova Praha.","Czech Music."]},
+{t:"Kultura a umění",q:"Jaký český film získal Oscara za nejlepší cizojazyčný film v roce 1968?",a:"Ostře sledované vlaky.",opts:["Kolya.","Ostře sledované vlaky.","Hoří, má panenko.","Markéta Lazarová."]},
+{t:"Kultura a umění",q:"Jak se nazývají tradiční české loutkové postavy zapsané na seznam UNESCO?",a:"Spejbl a Hurvínek.",opts:["Kašpárek a Pinokio.","Spejbl a Hurvínek.","Pinocchio a Gepetto.","Matěj a Kubula."]},
+{t:"Kultura a umění",q:"Jaký český film získal Oscara za nejlepší cizojazyčný film v roce 1996?",a:"Kolja.",opts:["Kolja.","Ostře sledované vlaky.","Pelíšky.","Samotáři."]},
+// T29 Sport
+{t:"Sport",q:"Ve kterém roce vyhráli čeští hokejisté zlaté medaile na ZOH?",a:"1998 (Nagano).",opts:["1994 (Lillehammer).","1998 (Nagano).","2002 (Salt Lake City).","2010 (Vancouver)."]},
+{t:"Sport",q:"Který český sportovec vyhrál tři zlaté medaile na OH 1952 v Helsinkách?",a:"Emil Zátopek.",opts:["Jaromír Jágr.","Emil Zátopek.","Petr Čech.","Ivan Lendl."]},
+{t:"Sport",q:"Jak se jmenuje nejslavnější česká tenistka (vítězka mnoha grandslamů)?",a:"Martina Navrátilová.",opts:["Petra Kvitová.","Martina Navrátilová.","Nicole Vaidišová.","Lucie Šafářová."]},
+{t:"Sport",q:"Jak se jmenuje slavný český hokejista, rekordman NHL v počtu odehraných sezón?",a:"Jaromír Jágr.",opts:["Dominik Hašek.","Jaromír Jágr.","Tomáš Holmström.","Martin Straka."]},
+// T30 Literatura a vzdělanost
+{t:"Literatura a vzdělanost",q:"Jak se nazývá hnutí obrody české kultury a jazyka z přelomu 18. a 19. stol.?",a:"Národní obrození.",opts:["Národní revoluce.","Národní obrození.","Sametová revoluce.","Husitství."]},
+{t:"Literatura a vzdělanost",q:"Kdo napsal Orbis Pictus — první ilustrovanou učebnici pro děti?",a:"Jan Amos Komenský.",opts:["Jan Hus.","Jan Amos Komenský.","František Palacký.","Josef Jungmann."]},
+{t:"Literatura a vzdělanost",q:"Jaká je měna České republiky (ČR nezavedla euro)?",a:"Koruna česká (Kč).",opts:["Koruna slovenská.","Koruna česká (Kč).","Euro (€).","Tolar."]},
+{t:"Literatura a vzdělanost",q:"Karel IV. je zakladatelem Karlovy univerzity. Kdy ji founded?",a:"V roce 1348.",opts:["V roce 1066.","V roce 1348.","V roce 1618.","V roce 1918."]}
+];
+
 // ── EXAM SIMULATOR ──
 const examSt={};
 function startExam(pid){
-  const allQ=JSON.parse($i(pid).dataset.exam);
-  const passPct=+$i(pid).dataset.pass||60;
-  const st=examSt[pid]={allQ,passPct,q:shuffle(allQ).slice(0,Math.min(20,allQ.length)),idx:0,correct:0,wrong:[],sessionXP:0};
+  let allQ, passPct=60;
+  if(pid==='exam-citizenship'){
+    allQ=lifeBank; passPct=60;
+  } else {
+    allQ=JSON.parse($i(pid).dataset.exam);
+    passPct=+$i(pid).dataset.pass||60;
+  }
+  const pick=pid==='exam-citizenship'?30:Math.min(20,allQ.length);
+  const st=examSt[pid]={allQ,passPct,q:shuffle([...allQ]).slice(0,pick),idx:0,correct:0,wrong:[],sessionXP:0};
   $i(pid+'-intro').style.display='none';
   $i(pid+'-session').style.display='block';
   $i(pid+'-result').style.display='none';
@@ -9054,7 +9289,7 @@ function startExam(pid){
 }
 function renderExamQ(pid){
   const st=examSt[pid],card=st.q[st.idx],total=st.q.length;
-  const isCz=(pid==='exam-citizenship'||pid==='exam-b1-reading');
+  const isCz=(pid==='exam-citizenship'||pid==='exam-b1-reading'||pid==='exam-topic');
   $i(pid+'-prog-text').textContent=(isCz?'Otázka ':'Q ')+(st.idx+1)+' / '+total;
   $i(pid+'-score-live').textContent=(isCz?'Skóre: ':'Score: ')+st.correct;
   $i(pid+'-prog-fill').style.width=((st.idx/total)*100)+'%';
@@ -9066,7 +9301,7 @@ function renderExamQ(pid){
 }
 function checkExamQ(pid,chosen,btn){
   const st=examSt[pid],card=st.q[st.idx];
-  const isCz=(pid==='exam-citizenship'||pid==='exam-b1-reading');
+  const isCz=(pid==='exam-citizenship'||pid==='exam-b1-reading'||pid==='exam-topic');
   $i(pid+'-opts').querySelectorAll('.exam-opt').forEach(b=>{b.disabled=true;if(b.textContent===card.a)b.classList.add('exam-correct');});
   const fb=$i(pid+'-fb');
   if(chosen===card.a){btn.classList.add('exam-correct');fb.textContent=isCz?'✅ Správně!':'✅ Correct!';fb.className='exam-feedback exam-fb-good';st.correct++;addXP(10,pid);st.sessionXP+=10;speak(card.cz||'');}
@@ -9077,7 +9312,7 @@ function checkExamQ(pid,chosen,btn){
 function nextExamQ(pid){const st=examSt[pid];st.idx++;if(st.idx>=st.q.length){showExamResult(pid);return;}renderExamQ(pid);}
 function showExamResult(pid){
   const st=examSt[pid];
-  const isCz=(pid==='exam-citizenship'||pid==='exam-b1-reading');
+  const isCz=(pid==='exam-citizenship'||pid==='exam-b1-reading'||pid==='exam-topic');
   const pct=Math.round((st.correct/st.q.length)*100);
   const passed=pct>=st.passPct;
   $i(pid+'-session').style.display='none';
@@ -9097,6 +9332,24 @@ function showExamResult(pid){
   STREAK++;localStorage.setItem('streak',STREAK);updateXPBar();
 }
 function restartExam(pid){$i(pid+'-result').style.display='none';$i(pid+'-intro').style.display='block';}
+
+// ── TOPIC PRACTICE ──
+let _curTopic='';
+function startTopicPractice(topic){
+  _curTopic=topic;
+  const qs=lifeBank.filter(q=>q.t===topic);
+  if(!qs.length){alert('Žádné otázky pro toto téma.');return;}
+  const pick=shuffle([...qs]).slice(0,Math.min(5,qs.length));
+  const pid='exam-topic';
+  examSt[pid]={q:pick,idx:0,correct:0,wrong:[],passPct:60,sessionXP:0};
+  $i(pid).style.display='block';
+  $i(pid+'-intro').style.display='none';
+  $i(pid+'-session').style.display='block';
+  $i(pid+'-result').style.display='none';
+  $i('exam-topic-retry-btn').onclick=()=>startTopicPractice(_curTopic);
+  renderExamQ(pid);
+  $i(pid).scrollIntoView({behavior:'smooth',block:'start'});
+}
 
 // ── PAGE NAVIGATION ──
 const pages=document.querySelectorAll('.page');
