@@ -144,6 +144,9 @@
 
 | Czech | English |
 |-------|---------|
+| Nechceš jít/jet…? | Don't you want to go...? (informal) |
+| Můžeš zítra/v pondělí…? | Can you tomorrow/on Monday...? (informal) |
+| Máš čas ráno/v 5 večer…? | Do you have time in the morning/at 5pm...? (informal) |
 | Kdy se sejdeme? | When shall we meet? |
 | Hodí se ti to? | Does that suit you? (informal) |
 | Hodí se vám to? | Does that suit you? (formal) |
@@ -154,6 +157,12 @@
 | Třeba zítra ve čtyři? | Maybe tomorrow at four? |
 | Těším se! | I'm looking forward to it! |
 | Domluveno! | It's agreed / Done! |
+
+**Example dialogue:**
+> Nechceš jít na tenis? — A kdy?
+> Můžeš zítra odpoledne? — Nemám čas, musím pracovat. Můžu zítra večer.
+> Kdy se sejdeme? — Třeba v osm večer? Hodí se ti to?
+> Ano, hodí, těším se!
 
 ---
 
