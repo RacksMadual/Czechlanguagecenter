@@ -137,6 +137,49 @@ The past participle changes based on **gender**:
 
 > **Key words for past tense:** včera (yesterday), minulý týden (last week), v sobotu (on Saturday)
 
+### Regular verbs — full past tense by gender/number
+
+| Infinitive | on | ona | ono/to | oni |
+|-----------|----|----|--------|-----|
+| být | byl | byla | bylo | byli |
+| narodit se | narodil se | narodila se | narodilo se | narodili se |
+| psát | psal | psala | psalo | psali |
+| studovat | studoval | studovala | studovalo | studovali |
+| učit | učil | učila | učilo | učili |
+| vyhrát | vyhrál | vyhrála | vyhrálo | vyhráli |
+
+- Mistrovství světa ve fotbale — Francie vyhrála 1:0. *(World Cup football — France won 1:0.)*
+- vyhrát X prohrát *(to win X to lose)*
+
+### Irregular verbs — past tense (nepravidelná slovesa)
+
+| Infinitive | Past (on) | English |
+|-----------|-----------|---------|
+| být | byl | was |
+| psát | psal | wrote |
+| spát | spal | slept |
+| pít | pil | drank |
+| číst | četl | read |
+| chtít | chtěl | wanted |
+| jít | šel / šla | went (m/f) |
+| jíst | jedl | ate |
+| mít | měl | had |
+| moct | mohl | could |
+| umřít | umřel | died |
+
+**Examples from your lessons (Trénujeme nepravidelná slovesa):**
+- Můj bratr byl v supermarketu. *(My brother was at the supermarket.)*
+- Moje maminka byla v práci. *(My mum was at work.)*
+- Moje kolegyně psala test. *(My colleague wrote a test — feminine.)*
+- Můj syn spal celý den. *(My son slept all day.)*
+- Můj dědeček pil jenom vodu. *(My grandfather drank only water.)*
+- Můj kamarád měl čas. *(My friend had time.)*
+- Můj asistent četl dokumenty. *(My assistant read documents.)*
+- Moje sestra jedla zeleninu. *(My sister ate vegetables.)*
+- Moje učitelka šla do restaurace. *(My teacher went to a restaurant.)*
+- Můj kolega nemohl jít do práce. *(My colleague couldn't go to work — masculine.)*
+- Moje kamarádka nechtěla jít do školy. *(My friend didn't want to go to school — feminine.)*
+
 ---
 
 ## 6. Future Tense — Budoucí čas
@@ -383,3 +426,154 @@ For saying dates, use **ordinal numbers in genitive** form:
 | Rozumíte? | Do you understand? (formal) |
 | Dobře. | Good / Correct. |
 | Špatně. | Wrong / Incorrect. |
+
+---
+
+## 18. Modal Verbs — Modální verba (chtít / moct / muset)
+
+| Person | chtít (to want) | moct (can / to be able) | muset (must / have to) |
+|--------|-----------------|--------------------------|--------------------------|
+| já | **chci** (!) | **můžu** | **musím** |
+| ty | chceš | můžeš | musíš |
+| on/ona/to | chce | může | musí |
+| my | chceme | můžeme | musíme |
+| vy | chcete | můžete | musíte |
+| oni | **chtějí** (!) | můžou | musí |
+
+> **chtít** and **moct** are irregular (watch the já and oni forms). **muset** is regular.
+
+**Usage pattern: modal verb (conjugated) + infinitive**
+- Chcete mluvit česky? *(Do you want to speak Czech?)* — (já) chci mluvit česky X (já) mluvím česky.
+- Musím dělat domácí úkol. *(I have to do homework.)*
+- Musím psát domácí úkol. *(I have to write my homework.)*
+- Musím studovat. *(I have to study.)*
+- Můžu dneska odpoledne spát. *(I can sleep this afternoon.)*
+- Nemůžu pracovat na počítači v noci. *(I can't work on the computer at night.)*
+- Nechci pít kávu. *(I don't want to drink coffee.)*
+- Nemůžu jíst zmrzlinu. *(I can't eat ice cream.)*
+- Lidé musí dýchat, pít vodu a jíst. *(People must breathe, drink water and eat.)*
+- Lidé chtějí být šťastní a zdraví. *(People want to be happy and healthy.)*
+
+### Making plans — dialogue pattern
+
+| Czech | English |
+|-------|---------|
+| Nechceš jít/jet…? | Don't you want to go...? |
+| Můžeš zítra/v pondělí…? | Can you tomorrow/on Monday...? |
+| Máš čas ráno/v 5 večer…? | Do you have time in the morning/at 5pm...? |
+| Kdy se sejdeme? | When shall we meet? |
+| Hodí se ti to? | Does that suit you? |
+| Těším se! | I'm looking forward to it! |
+
+**Example dialogue (Prince and Yasmin):**
+> Prince: Yasmin, nechceš jít na tenis?
+> Yasmin: A kdy?
+> Prince: Můžeš zítra odpoledne?
+> Yasmin: Nemám čas, musím pracovat. Můžu zítra večer.
+> Prince: Zítra večer nemůžu. Musím psát domácí úkol. Můžeš ve středu večer?
+> Yasmin: Ano můžu. V kolik hodin?
+> Prince: Třeba v osm večer? Hodí se ti to?
+> Yasmin: Ano, hodí, těším se.
+>
+> *(Prince: Yasmin, don't you want to go play tennis? — Yasmin: When? — Prince: Can you tomorrow afternoon? — Yasmin: I don't have time, I have to work. I can tomorrow evening. — Prince: I can't tomorrow evening. I have to write homework. Can you Wednesday evening? — Yasmin: Yes, I can. What time? — Prince: Maybe 8pm? Does that suit you? — Yasmin: Yes, it suits me, I'm looking forward to it.)*
+
+---
+
+## 19. Expressing Likes — rád + verb vs. mám rád + noun
+
+Two ways to say you like something:
+
+| Construction | Meaning | Example |
+|--------------|---------|---------|
+| **rád/ráda + verb (conjugated)** | liking an *activity* | Rád vařím. *(I like to cook — male speaker.)* |
+| **mám rád / mám ráda + noun (accusative)** | liking a *thing* | Mám rád čaj. *(I like tea — male speaker.)* |
+
+> **rád** = male speaker, **ráda** = female speaker, **rádi** = plural subject.
+> Negative: **nerad/nerada** (no comma before rád/a, unlike English "no, I...").
+
+**Examples from your lessons:**
+- Mám rád čaj. X Nemám rád alkohol. *(I like tea. X I don't like alcohol — male.)*
+- Rád vařím pizzu. *(I like cooking pizza — male.)*
+- Moje maminka ráda vaří guláš. *(My mum likes cooking goulash.)*
+- Moje sestra má ráda maso. *(My sister likes meat.)*
+- Yasmin nemá ráda ryby. *(Yasmin doesn't like fish.)*
+- Nerad pracuju. *(I don't like working — male.)*
+- Moje sestra nemá ráda spánek. X Moje sestra nerada spí. *(My sister doesn't like sleep. X My sister doesn't like sleeping.)*
+- Mám ráda plavání. (noun) X Ráda plavu. (verb) *(I like swimming — female, both variants.)*
+- Olga má moc ráda knihy. Ráda čte knihy, noviny a časopisy. *(Olga likes books a lot. She likes reading books, newspapers and magazines.)*
+- Václav má rád tenis. Rád hraje tenis. *(Václav likes tennis. He likes playing tennis.)*
+- Olga a Václav mají rádi dobré jídlo a rádi vaří a jedí. *(Olga and Václav like good food and like cooking and eating — plural.)*
+
+---
+
+## 20. Frequency Adverbs — nikdy / někdy
+
+| Czech | English | Rule |
+|-------|---------|------|
+| **nikdy** | never | requires **double negation** — nikdy + negated verb |
+| **někdy** | sometimes | used with a **positive** verb |
+
+**Examples from your lessons:**
+- Nikdy nemám čas. *(I never have time.)*
+- Nikdy netancuju na diskotéce. *(I never dance at the disco.)*
+- Nikdy nepracuju na počítači. *(I never work on the computer.)*
+- Nikdy nenakupuju v supermarketu. *(I never shop at the supermarket.)*
+- Nikdy nečtu knihy. *(I never read books.)*
+- Nikdy nehraju fotbal. *(I never play football.)*
+- Nikdy neuklízím byt. *(I never clean the flat.)*
+- Někdy čtu knihu. *(I sometimes read a book.)*
+- Někdy uklízím. *(I sometimes clean.)*
+- Často se dívám na televizi. *(I often watch TV.)*
+- Můj bratr nikdy nerozumí česky. *(My brother never understands Czech.)*
+- Můj kolega někdy poslouchá podcast. *(My colleague sometimes listens to a podcast.)*
+
+---
+
+## 21. More Verb Conjugation Drills — Present Tense
+
+| Person | vařit (to cook) | hrát (to play) | nakupovat (to shop) | spát (to sleep) |
+|--------|-----------------|-----------------|----------------------|-------------------|
+| já | vařím | hraju | nakupuju | spím |
+| ty | vaříš | hraješ | nakupuješ | spíš |
+| on/ona/to | vaří | hraje | nakupuje | spí |
+| my | vaříme | hrajeme | nakupujeme | spíme |
+| vy | vaříte | hrajete | nakupujete | spíte |
+| oni | vaří | hrají | nakupují (nakupujou) | spí |
+
+| Person | psát (to write) | dívat se (to watch — reflexive) | uklízet (to tidy/clean) | poslouchat (to listen) |
+|--------|-------------------|-----------------------------------|---------------------------|--------------------------|
+| já | píšu (píši) | dívám se | uklízím | poslouchám |
+| ty | píšeš | díváš se | uklízíš | posloucháš |
+| on/ona/to | píše | dívá se | uklízí | poslouchá |
+| my | píšeme | díváme se | uklízíme | posloucháme |
+| vy | píšete | díváte se | uklízíte | posloucháte |
+| oni | píší (píšou) | dívají se | uklízí | poslouchají |
+
+> **Note:** hrát has an irregular stem (hraj-) — it doesn't follow the regular Type III -ovat pattern like nakupovat.
+
+---
+
+## 22. Professions — Masculine/Feminine Pairs (Gender Formation)
+
+Czech professions form feminine equivalents with suffixes like **-ka**, **-ně/-yně**, **-čka**.
+
+| Masculine | Feminine | English |
+|-----------|----------|---------|
+| filozof | filozofka | philosopher |
+| vědec | vědkyně | scientist |
+| politik | politička | politician |
+| profesor | profesorka | professor |
+| cestovatel | cestovatelka | traveler |
+| sportovec | sportovkyně | athlete |
+| zpěvák | zpěvačka | singer |
+| skladatel | skladatelka | composer |
+| herec | herečka | actor/actress |
+| spisovatel | spisovatelka | writer |
+| malíř | malířka | painter |
+| prezident | prezidentka | president |
+
+**Examples from your lessons:**
+- Znáte nějakého slavného člověka? *(Do you know a famous person?)*
+- Petr Pavel je slavný člověk — český prezident. *(Petr Pavel is a famous person — the Czech president.)*
+- Božena Němcová byla česká spisovatelka. *(Božena Němcová was a Czech writer.)*
+- T.G. Masaryk byl filozof a politik. *(T.G. Masaryk was a philosopher and politician.)*

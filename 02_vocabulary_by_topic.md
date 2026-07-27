@@ -148,6 +148,11 @@
 | sportovat | to do sports |
 | vařit | to cook |
 | nakupovat | to go shopping |
+| uklízet (byt) | to tidy up / clean (the flat) |
+| spát | to sleep |
+| tancovat | to dance |
+| poslouchat hudbu | to listen to music |
+| psát emaily | to write emails |
 
 ### Meals
 | Czech | English |

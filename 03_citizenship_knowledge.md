@@ -617,6 +617,17 @@ Czech Republic has **14 regions (krajů):**
 | **Jan Evangelista Purkyně** | Scientist, discovered Purkinje cells |
 | **Gregor Mendel** | "Father of genetics", worked in Brno |
 
+**From Prince's lesson reading texts:**
+
+**Božena Němcová (1820–1862):**
+- Czech writer (spisovatelka) — beautiful and talented, but her husband had political and financial problems, so Němcová often had no money
+- Wrote novels, short stories, and fairy tales (romány, povídky, pohádky)
+- Best known for depicting Czech village life and folk tales
+
+**T.G. Masaryk — additional detail (1850–1937):**
+- Studied philosophy, then taught philosophy at university as a professor and wrote about philosophy
+- Became the first Czechoslovak president
+
 ---
 
 ### Topic 27: Czech Inventions & Contributions
